@@ -1,0 +1,116 @@
+# Translation of Plugins - GDPR Data Request Form - Stable (latest release) in Dutch
+# This file is distributed under the same license as the Plugins - GDPR Data Request Form - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-12-09 13:54:45+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: nl\n"
+"Project-Id-Version: Plugins - GDPR Data Request Form - Stable (latest release)\n"
+
+#: public/widget.php:72 public/js/block.js:94
+msgid "Data Remove form only"
+msgstr "Formulier om alleen gegevens te verwijderen"
+
+#: public/widget.php:71 public/js/block.js:93
+msgid "Data Export form only"
+msgstr "Formulier om alleen gegevens te exporteren"
+
+#: public/widget.php:70 public/js/block.js:92
+msgid "Both Export and Remove"
+msgstr "Beide Exporteren en Verwijderen"
+
+#. Description of the plugin
+msgid "Use WordPress Core GDPR tools to build front-end Personal Data export/erasure forms (includes Widget, Gutenberg Block, shortcode & Hooks)."
+msgstr "Gebruik de WordPress Core GDPR gereedschappen om front-end formulieren voor het exporteren/verwijderen van persoonsgegevens op te stellen (inclusief widget, Gutenberg blok, shortcode & Hooks)."
+
+#. Author of the plugin
+msgid "audrasjb"
+msgstr "audrasjb"
+
+#: public/hook.php:102
+msgid "This plugin requires WordPress 4.9.6."
+msgstr "Deze plugin vereist WordPress 4.9.6."
+
+#: includes/data-request.php:36 data-request.php:36
+msgid "Security check failed, invalid human verification field."
+msgstr "Veiligheidscheck mislukt, fout bij de menselijke controle."
+
+#: public/hook.php:38
+msgid "Human verification (required):"
+msgstr "Menselijke controle (verplicht)"
+
+#. Author URI of the plugin
+msgid "https://jeanbaptisteaudras.com"
+msgstr "https://jeanbaptisteaudras.com"
+
+#: public/widget.php:64
+msgid "Optional widget description:"
+msgstr "Optionele widget beschrijving:"
+
+#: public/hook.php:39
+msgid "Send Request"
+msgstr "Verstuur aanvraag"
+
+#: includes/data-request.php:50 data-request.php:50
+msgid "Unable to initiate confirmation request. Please contact the administrator."
+msgstr "Aanvraag mislukt. Neem contact op met de beheerder."
+
+#: includes/data-request.php:43 data-request.php:43
+msgid "All fields are required."
+msgstr "Alle velden zijn noodzakelijk."
+
+#: includes/data-request.php:39 data-request.php:39
+msgid "Request type invalid, please refresh this page and try to submit the form again."
+msgstr "Type van het verzoek is ongeldig. Herlaad de pagina en probeer het opnieuw."
+
+#: includes/data-request.php:33 data-request.php:33
+msgid "This is not a valid email address."
+msgstr "Dit is geen geldig email adres."
+
+#: includes/data-request.php:30 data-request.php:30
+msgid "Security check failed, please refresh this page and try to submit the form again."
+msgstr "Veiligheidscheck mislukt, herlaad de pagina en probeer opnieuw."
+
+#: includes/data-request.php:24 data-request.php:24
+msgid "The request can’t be processed on this website. This feature requires WordPress 4.9.6 at least."
+msgstr "Actie helaas mislukt. WordPress 4.9.6 is minimaal noodzakelijk."
+
+#: public/hook.php:35
+msgid "Export Personal Data"
+msgstr "Exporteer persoonlijke data"
+
+#: public/hook.php:37
+msgid "Your email address (required)"
+msgstr "Je e-mailadres (verplicht)"
+
+#. Plugin Name of the plugin
+msgid "GDPR Data Request Form"
+msgstr "GDPR gegevens verzoekformulier"
+
+#: public/enqueues.php:24 public/public.php:24
+msgid "Your enquiry have been submitted. Check your email to validate your data request."
+msgstr "Je aanvraag is verstuurd. Controleer je e-mail om je gegevens-verzoek te volgen."
+
+#. Plugin URI of the plugin
+msgid "https://jeanbaptisteaudras.com/gdpr-data-request-form"
+msgstr "https://jeanbaptisteaudras.com/gdpr-data-request-form"
+
+#: public/widget.php:60
+msgid "Optional widget title:"
+msgstr "Optioneel widget titel:"
+
+#: public/enqueues.php:25 public/public.php:25
+msgid "Some errors occurred:"
+msgstr "Er zijn enkele fouten opgetreden:"
+
+#: public/hook.php:34
+msgid "Select your request:"
+msgstr "Selecteer je aanvraag:"
+
+#: public/hook.php:36
+msgid "Remove Personal Data"
+msgstr "Verwijder persoonlijke gegevens"
