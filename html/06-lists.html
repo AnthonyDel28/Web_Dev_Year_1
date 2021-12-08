@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css">
+    <title>Les listes</title>
+</head>
+<body>
+    <fieldset>
+        <!-- Pour renvoyer vers un emplacement précis, on utilise un signet (ancre) et un id
+        Dans le href du lien on place le htag #terme -->
+        <legend>Utilisation d'un signet</legend>
+        <p>Lorem <a href="#ipsum">ipsum</a>  dolor sit amet <a href="#consectetur">consectetur</a> adipisicing elit. Iusto ratione, dolores doloribus commodi nemo dolor eum. Nemo facilis iusto eos quod doloribus, maxime culpa placeat delectus ut nobis beatae illo nulla fuga est eum veritatis? Necessitatibus qui quas quae aspernatur?</p>
+    </fieldset>
+    <fieldset>
+        <legend>Les listes ordonnées</legend>
+        <ol>
+            <li>ETW</li>
+            <li>IP</li>
+            <li>Réseau</li>
+            <li>Sites statiques</li>
+            <li>CMS</li>
+        </ol>
+        <!-- Numérotation renversée  -->
+        <!-- Attribut booleen reversed -->
+        <ol reversed>
+            <li>ETW</li>
+            <li>IP</li>
+            <li>Réseau</li>
+            <li>Sites statiques</li>
+            <li>CMS</li>
+        </ol>
+        <!-- Modifier la numérotation: A, a, I et i -->
+        <ol type="A">
+            <li>ETW</li>
+            <li>IP</li>
+            <li>Réseau</li>
+            <li>Sites statiques</li>
+            <li>CMS</li>
+        </ol>
+
+        <ol>
+            <li>ETW</li>
+            <li>IP</li>
+            <li>Réseau</li>
+        </ol>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia voluptatibus, eos magnam autem, accusantium odio explicabo obcaecati dolorem facilis non, temporibus quo ex iusto amet ipsum. Quidem, tempora ex ad omnis maiores neque optio placeat. Hic laudantium ab a quas.</p>
+        <!-- Modifier le début de la numérotation -->
+        <ol start="4">
+            <li>Sites statiques</li>
+            <li>CMS</li>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>Listes non ordonnées (à puces)</legend>
+        <!-- ul>li*5>{Item 0$} -->
+        <ul>
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+            <li>Item 04</li>
+            <li>Item 05</li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Listes imbriquées</legend>
+        <!--
+        1 css
+        2 php 
+        3 html 
+           A html 01
+           B html 02
+           C html 03
+           D html 04
+           E xhtml 01
+           F html 05
+        4 JavaScript
+        -->
+
+        <ol>
+            <li>CSS</li>
+            <li>PHP</li>
+            <li>HTML
+                <ol type="a">
+                    <li>html 01</li>
+                    <li>html 02</li>
+                    <li>html 03</li>
+                    <li>html 04</li>
+                    <li>xhtml 01</li>
+                    <li>html 05</li>
+                </ol>
+            </li>
+            <li>JavaScript</li>
+        </ol>
+    </fieldset>
+
+    <fieldset>
+        <legend>Listes à définitions</legend>
+        <dl>
+            <dt>Lorem</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quaerat, magni, voluptatem error iure inventore deleniti neque quo eaque, nulla sed debitis corrupti sit nesciunt?</dd>
+            <!-- Pour définir l'emplacement du retour on positionne un id="terme" dans la balise du mot -->
+            <dt id="ipsum">Ipsum</dt>
+            <dd>Dolor sit amet consectetur adipisicing elit. Esse error necessitatibus dolorum, quod explicabo voluptas nemo maxime quidem nulla eum fugiat expedita voluptatem? Fuga optio consequatur nemo. Fugiat, dignissimos laboriosam!</dd>
+
+            <dt id="consectetur">Consectetur</dt>
+            <dd>Consectetur, adipisicing elit. Veniam eius beatae necessitatibus sed expedita, eligendi molestiae, neque, animi eum ex repellat ut. Praesentium ex culpa ipsam sequi. Aperiam nam, quidem quae vel odio consectetur reprehenderit fugiat. Dolores tempore, harum nisi, molestias ipsam voluptatem, corrupti omnis hic earum explicabo blanditiis magni!</dd>
+        </dl>
+    </fieldset>
+</body>
+</html>

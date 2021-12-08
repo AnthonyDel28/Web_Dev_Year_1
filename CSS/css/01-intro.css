@@ -1,0 +1,16 @@
+/* Commentaire CSS */
+
+h1 {
+    color: yellowgreen;
+    text-align: center;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}

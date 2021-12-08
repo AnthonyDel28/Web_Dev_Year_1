@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css">
+    <title>Les balises de formatage</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Formatage sémantique</legend>
+        <!-- 
+            Utilisation des balises de ligne sémantique
+            Ne plus utiliser les balises non sémantiques: <i>, <b> et <u>
+            La balise de ligne <span> permet d'encadrer du contenu pour un formatage css
+         -->
+        <p>Lorem, ipsum dolor <strong>sit amet consectetur</strong> adipisicing elit. Molestiae fuga vel <b>voluptas</b> ullam incidunt debitis <em>officia numquam</em> sit iusto. <i>Numquam</i> quos explicabo exercitationem eum commodi voluptatum? Illo unde fuga officiis <ins>Inventore</ins> ratione harum neque sint. Non quo <u> dignissimos</u> asperiores sunt. <span.underline>Eaque dolorem</span.underline> nam facilis iure, illo possimus voluptatibus assumenda autem.</p>
+        <p>Perspiciatis saepe tempore, quidem velit consequuntur voluptatem <del>voluptatibus molestiae</del>. Sunt suscipit repudiandae ducimus hic, laboriosam quibusdam soluta, similique aspernatur officia ipsum, aut aliquid possimus atque tempore velit illo a nam pariatur sed ullam voluptates recusandae nihil expedita. Aperiam praesentium facere nihil quam, quia placeat quidem neque aut iusto, voluptas nemo.</p>
+        <p>Rem ab natus beatae delectus molestias, eligendi ullam eos consequatur nobis quisquam laudantium <mark>dignissimos rerum</mark> vitae quaerat atque vero officia cumque hic at distinctio quam. Quisquam quae totam eveniet dolorem, ea quasi eligendi deleniti non vitae M<sup>me</sup> perspiciatis doloribus. Quaerat aut laudantium asperiores adipisci molestias H<sub>2</sub>O nihil atque esse quidem perspiciatis aliquid?</p>
+        <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquid quos vitae architecto, repellendus dolorum error fugiat vel deserunt illum ut voluptates obcaecati distinctio autem tenetur, nam facilis magni. Odio officia, tempore doloremque maxime maiores quas facere quos cupiditate unde doloribus accusantium commodi similique! Esse, eos ea! Cumque, libero ducimus.</small></p>
+    </fieldset>
+
+    <!-- fieldset>legend{Les types de citations et autres} -->
+    <fieldset>
+        <legend>Les types de citations et autres</legend>
+        <!-- balise blockquote permet de créer un paragraphe de citation et l'attribut cite de définir la source (web, livre, presse...) -->
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam quas non possimus? Dolores, enim rem? Tenetur quam reiciendis alias, autem dolorum, rerum architecto, ad eius accusantium molestiae saepe quos quo temporibus delectus illo itaque tempora omnis. Dignissimos, dolores! Atque, aut.</p>
+        <blockquote cite="https://fr.wikipedia.org/wiki/Renaissance">
+            <p lang="en">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatibus fuga exercitationem adipisci deleniti esse laborum tenetur dolorem error, non consectetur cum veritatis temporibus? Unde ab maiores, asperiores ad molestias iusto ratione vel quae nulla! Labore amet ab eum facere?</p>
+        </blockquote>
+        <!-- La balise <q> permet de créer une citation courte -->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni perspiciatis delectus, sunt, provident adipisci excepturi <q cite="Pierre Ronsard">voluptatibus quis iure repellat</q> ducimus non iusto? Aliquam vero neque, rem in tempora nam quaerat tenetur odit maxime culpa quidem.</p>
+        <!-- La balise cite est utilisée pour encadrer des oeuvres pas les dates ni les auteurs ex: livres, chansons, films, tableaux... -->
+        <p>
+            <cite>La Joconde</cite> de Léonard de Vinci<br>
+            <cite>La Madone</cite> de Raphael
+        </p>
+        <!-- La balise <abbr> Permet de signifier des abréviations ou des acronymes -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora, incidunt iure cupiditate, iste facere a illum tempore eos <abbr title="organisation traité Atlatique Nord">OTAN</abbr> aperiam minima iusto voluptatibus doloremque esse expedita quae hic itaque, ipsam est rerum. Perferendis iusto dolore dolor molestias optio. Ad, sit.</p>
+        <!-- La balise <address> est destinée aux informations de type numérique et non postal -->
+        <address>
+            John Doe<br>
+            Email: john.die@gamil.com<br>
+            Website: https:www.jdoe.com<br>
+            Linkedin: ...
+        </address>
+        <p>
+            Lorem, ipsum dolor <time datetime="2021-12-07">07/12/2021</time> sit amet consectetur adipisicing elit. Nam tempora, ratione nemo repellat praesentium perferendis voluptatibus reprehenderit deserunt perspiciatis ipsum.
+            Lorem, ipsum dolor <time datetime="2021-01-01">Début de l'année</time> sit amet consectetur adipisicing elit. Provident, veniam odit obcaecati eos dolorum illo ducimus totam earum quidem tenetur?
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Les entités HTML</legend>
+        <!-- Les entités nommées ou numériques commencent par & et se terminent par ; -->
+        <p>Les balises HTML:<br>
+            la balise &lt;strong&gt; permet de mettre en évidence du contenu
+        </p>
+        <p>
+            <!-- entités nommées -->
+            &copy;<br>
+            &trade;<br>
+            &euro;<br>
+            &frac12;<br>
+            &rarr;<br>
+            &nbsp;<br> <!-- espace -->
+            <!-- entités numériques -->
+            &#174;<br>
+            &#9824;
+        </p>
+    </fieldset>
+</body>
+</html>

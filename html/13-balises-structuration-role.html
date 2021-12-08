@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/template.css">
+	<title>Balises de structure</title>
+	<style>
+		body {
+			margin: 2% 25%;
+		}
+
+		fieldset {
+			padding: 0 50px;
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend>signification</legend>
+		<h3>L’élément main</h3>
+		<p>L’élément main représente le contenu principal du body. La zone de contenu principale d’un document comprend un contenu unique à ce document et exclut le contenu répété sur un ensemble de documents, tels que des liens de navigation de site, des informations de copyright, des logos de site et des bannières.</p>
+		<p>La spécification officielle (HTML5.1) indique que l’élément main ne doit pas être imbriqué dans un autre élément structurant et qu’on ne doit utiliser qu’un élément main par page.</p>
+		<h3>L'élément header</h3>
+		<p>L’élément header représente l’en-tête de nos pages. Cet élément va généralement contenir le logo du site, le titre principal et le menu de navigation. Dans le cas d’un blog, si nous avons un article de blog qui est placé dans un élément article, on pourra également utiliser un élément header dans l’élément article et y placer les informations relatives à l’auteur ou autres.</p>
+		<h3>L’élément nav</h3>
+		<p>L’élément nav représente un menu de navigation. Nous allons par exemple pouvoir utiliser cet élément pour entourer le menu de nos pages. Cela va permettre d’indiquer aux navigateurs et moteurs de recherche que notre élément ul (utilisé pour créer un menu) n’est pas qu’une liste mais bien un menu de navigation.</p>
+		<h3>L'élément section</h3>
+		<p>L’élément section représente à nouveau une partie d’une page cohérente mais qui ne va pas forcément faire du sens si on l’extrait seule de la page pour l’intégrer ailleurs. L’élément section est à mi-chemin entre les éléments article et div et nous pourrons nous en servir pour organiser nos pages.</p>
+		<p>Un cas classique d’utilisation de section est le cas d’une page de présentation d’une entreprise. Sur ce type de pages, il y a généralement une partie dédiée à la présentation de l’activité de l’entreprise, une autre partie pour l’équipe, etc. Nous pourrons ici encadrer chaque partie avec un élément section pour les séparer les unes des autres.</p>
+		<h3>L'élément article</h3>
+		<p>Contient un article rédactionnel (comme pour la presse, revue, ouvrage...) qui pourrait figurer sur une page entière du site.  Devrait contenir un header eventuellement un footer.  Utilisation recommandée pour les blogs</p>
+		<h3>L'élément aside</h3>
+		<p>Contient les composantes non directement liées au contenu principal mais pouvant fournir des informations supplémentaires indirectement en relation avec ce dernier (entrées de glossaire, biographie de l'auteur, liens connexes, etc).</p>
+		<h3>L'élément footer</h3>
+		<p>L’élément footer va avoir un rôle et une signification sémantique identiques à l’élément header. Comme son nom l’indique, nous utiliserons cet élément pour entourer les informations de pied de page (notice de copyright, menu de navigation bas, etc.).</p>
+	</fieldset>
+</body>
+</html>

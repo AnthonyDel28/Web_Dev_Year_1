@@ -1,0 +1,53 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+nav {
+	height: 40px;
+}
+
+.slider {
+	height: 400px;
+	background-image: url('../img/ban.jpg');
+}
+
+main {
+	margin: 0 10%;
+}
+
+.container-about {
+	min-height: 250px;
+	display: flex;
+}
+
+.container-about div {
+	width: 50%;
+}
+
+.container-team {
+	display: flex;
+}
+
+.container-team div {
+	width: 25%;
+	min-height: 150px;
+}
+
+.container-article {
+	display: flex;
+}
+
+.html {
+	width: 80%;
+	height: 250px;
+	padding-right: 20px;
+}
+
+footer {
+	display: flex;
+}
+
+footer div {
+	width: 33%;
+}

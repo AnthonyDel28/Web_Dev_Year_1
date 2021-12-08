@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+    <h2>Un ensemble d'images</h2>
+    <!-- La balise figure permet de regrouper plusieurs images ensemble 
+    & la balise figcaption permet d'ajouter une seule légende -->
+    <figure>
+        <img src="img/pomme.jpg" alt="">&nbsp;
+        <img src="img/pomme-rouge.jpg" alt="">&nbsp;
+        <img src="img/panier-pommes.jpg" alt="">&nbsp;
+        <figcaption>
+            Pommes de Belgique
+        </figcaption>
+    </figure>
+    <h2>La vidéo</h2>
+    <fieldset>
+        <legend>Video fichier unique de base</legend>
+        <video src="media/bunny.mp4" controls></video>
+    </fieldset>
+
+    <fieldset>
+        <legend>Video fichier unique avec options</legend>
+        <video src="media/bunny.mp4" controls loop autoplay muted preload></video>
+        <!--Pour un démarrage auto, veuillez ajouter le tag "muted", soucis de compatibilité-->
+    </fieldset>
+
+    <fieldset>
+        <legend>Video - Image Cache</legend>
+        <video src="media/bunny.mp4" controls poster="media/bunny.jpg"></video>
+    </fieldset>
+
+    <fieldset>
+        <legend>Videos multiples</legend>
+        <video controls width="500" poster="media/bunny.jpg">
+            <source src="media/bunny.mp4">
+            <source src="media/bunny2.webm">      
+            <p>Format de vidéo invalide !</p>      
+        </video>
+    </fieldset>
+
+    <h2>L'audio</h2>
+    <fieldset>
+        <legend>Musiques</legend>
+        <legend>Dr. Dre</legend>
+        <audio src="media/dr.dre.flac" controls ></audio>
+        <p><legend>Ocean Eyes</legend>
+        <audio src="media/Ocean_Eyes.flac" controls></audio>
+    </fieldset>
+</body>
+</html>

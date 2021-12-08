@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css">
+    <title>Les formulaires & la balise input</title>
+</head>
+<body>
+    <fieldset>
+        <!--
+            - action= le fichier(page) de traitement du form qui sera toujours en PHP
+            (ex: insert.php)
+            - method get = passage des données sous la forme de paramètres dans 
+            l'URL => en PHP $_GET['name']
+            - method post = passage des données de façon transparente
+            - label = étiquette du champ
+            - for = association entre le label et le champ
+            - attribut name permet de récupérer la donnée dans le script
+        -->
+        <legend>Formulaire de base</legend>
+        <form action="#" method="GET">
+            <label for="name">Votre nom:</label>
+            <input type="text" id="name" name="name">
+            <input type="submit">
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Les types de champs</legend>
+        <form action="#" method="post">
+            <label for="mail">Votre e-mail:</label>
+            <input type="email" id="mail" name="mail">
+            <br>
+            <label for="mail">Votre site web:</label>
+            <input type="url" id="url" name="url">
+            <br>
+            <label for="child">Nombre d'enfants:</label>
+            <input type="number" min="1" max ="8" id="child" name="child">
+            <br>
+            <label for="rdv">Choisissez une date:</label>
+            <input type="date" id="rdv" name="rdv" value="2021-12-02">
+            <br>
+            <label for="month">Votre mois de naissance:</label>
+            <input type="month" id="month" name="month">
+            <br>
+            <label for="pass">Votre mot de passe:</label>
+            <input type="password" name="pass" id="pass">
+            <br>
+            <input type="submit" value="Enregistrer">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Autres attributs</legend>
+        <label for="firstname">Votre prénom:</label>
+        <form action="" method="POST">
+        <input type="text" id="firstname" name="firstname" required placeholder="Votre prénom">
+        <!-- La balise button va premettre le traitement avant la soumission -->
+        <button type="submit">Soumettre</button>
+        <br>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Long texte</legend> 
+    <form action="">
+        <label for="com">Votre commentaire:</label><br>
+        <textarea name="com" id="com" cols="30" rows="10">Laissez votre commentaire</textarea><br>
+        <input type="submit" value="Enregistrer">
+    </form>
+    </fieldset> 
+    
+    <fieldset>
+        <legend>Boutons radio</legend>
+        <form action="" method="GET">
+            <label>Votre genre:</label>
+            <br>
+            <input type="radio" name="gender" id="m" value="Monsieur">
+            <label for="m">Monsieur</label>
+            <br>
+            <input type="radio" name="gender" id="f" value="Madame">
+            <label for="f">Madame</label>
+            <br>
+            <input type="radio" name="gender" id="mme" value="Mademoiselle"> 
+            <label for="mme">Mademoiselle</label>
+            <br>
+            <input type="submit" value="Enregistrer">
+        </form>
+    </fieldset> 
+
+    <fieldset>
+        <legend>Cases à cocher</legend>
+        <form action="" method="POST">
+            <p>Vos occupations:</p>
+            <input type="checkbox" id="s" name="sport" value="1"> 
+            <label for="s">Sport</label>
+            <br>
+            <input type="checkbox" name="music" id="ms" value="1">
+            <label for="ms">Musique</label>
+            <br>
+            <input type="checkbox" name="movie" id="mv" value="1">
+            <label for="mv">Cinéma</label>
+            <br>
+            <input type="checkbox" name="info" id="if">
+            <label for="if">Informatique</label>
+            <br>
+            <input type="submit" value="Soumettre">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Champs particuliers</legend>
+        <!-- L'attribut enctype est indispensable au bon fonctionnement de ce module!-->
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <label for="file">Votre fichier:</label>
+            <input type="file" name="avatar" id="file">
+            <br>
+            <input type="submit">
+        </form>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css">
+    <title>Formulaire - Listes</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Balise select</legend>
+        <form action="#" method="POST">
+            <label for="fct">Sélectionnez votre fonction</label>
+            <select name="fonction" id="fct">
+            <option value="">Sélectionnez...</option>
+            <option value="Enseignant">Enseignant</option>
+            <option value="Directeur">Directeur</option>
+            <option value="Econome">Econome</option>
+            <option value="Secrétaire">Secrétaire</option>
+            <option value="Etudiant">Etudiant</option>
+        </select>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Liste structurée</legend>
+        <!-- La balise optgroup permet d'ajouter des catégories principales-->
+        <form action="#" method="POST">
+            <label for="country">Sélectionnez votre pays</label>
+            <select name="country" id="country">
+            <option value="">Sélectionnez...</option>
+            <optgroup label="Europe">
+                <option value="be">Belgique</option>
+                <option value="fr">France</option>
+                <option value="it">Italie</option>
+                <option value="de">Allemagne</option>
+                <option value="es">Espagne</option>
+            </optgroup>
+            <optgroup label="Amérique">
+                <option value="ag">Argentine</option>
+                <option value="cn">Canada</option>
+                <option value="us">Etats-Unis</option>
+                <option value="bz">Brésil</option>
+            </optgroup>
+            </select>
+        </form>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Liste ouverte et multiple</legend>
+        <form action="#" method="POST">
+        <label for="fonction">Vos fonctions:</label>
+        <br>
+        <select name="fonction" id="fonction" size="6" multiple>
+            <option value="Enseignant">Enseignant</option>
+            <option value="Directeur">Directeur</option>
+            <option value="Econome">Econome</option>
+            <option value="Secrétaire">Secrétaire</option>
+            <option value="Etudiant">Etudiant</option>
+            <option value="Sous-directeur">Sous-directeur</option>
+        </select>
+        <br>
+        <input type="submit">
+        </form>
+    </fieldset>
+</body>
+</html>

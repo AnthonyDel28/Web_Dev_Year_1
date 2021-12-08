@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css">
+    <title>Formulaire - Autres champs</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Curseur et couleurs</legend>
+        <form action="" method="POST">
+            <label for="skill">Compétences en programmation</label>
+            <input type="range" name="skill" id="skill" min="0" max="10" 
+            oninput="document.getElementById('level').textContent=value">
+            <span id="level">5</span>
+            <br>
+            <input type="submit">
+        </form>
+
+        <form action="" method="post">
+            <br>
+            <label for="color">Choisissez la couleur de votre véhicule</label>
+            <input type="color" id="color" name="color" oninput="document.getElementById('col').textContent=value">
+            <span id="col"></span>
+            <br>
+            <input type="submit">
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Pattern et expressions régulières</legend>
+        <form action="#" method="get">
+            <label for="name">Votre nom de famille:</label>
+            <input type="text" id="name" name="name" pattern="[A-Za-z-]{2,}">
+            <br>
+            <label for="pass">Votre mot de passe</label>
+            <input type="password" id="pass" name="pass" pattern=".{8,12}">
+            <br>
+            <input type="submit">
+        </form>
+    </fieldset>
+</body>
+</html>

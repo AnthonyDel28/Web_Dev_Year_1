@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tableaux</title>
+    <link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Les tableaux de base[table, tr, th et td]
+        </legend>
+        <table border="1">
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Fonction</th>
+                <th>Localité</th>
+            </tr>
+            <tr>
+                <td>Doe</td>
+                <td>John</td>
+                <td>Directeur</td>
+                <td>Namur</td>
+            </tr>
+            <tr>
+                <td>Scofield</td>
+                <td>Michael</td>
+                <td>Détenu</td>
+                <td>Chicago</td>
+            </tr>
+            <tr>
+                <td>Sarah</td>
+                <td>Tancredi</td>
+                <td>Médecin</td>
+                <td>New-York</td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Tableaux structurés [thead, tbody, tfoot]
+        </legend>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Fonction</th>
+                    <th>Localité</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Doe</td>
+                    <td>John</td>
+                    <td>Directeur</td>
+                    <td>Namur</td>
+                </tr>
+                <tr>
+                    <td>Scofield</td>
+                    <td>Michael</td>
+                    <td>Détenu</td>
+                    <td>Chicago</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>Tancredi</td>
+                    <td>Médecin</td>
+                    <td>New-York</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <td>3 membres</td>
+                </tr>
+            </tfoot>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Les fusions de lignes et de colonnes
+        </legend>
+        <table border="1">
+            <thead>
+                <tr>
+                   <th colspan="4">IEPSCF - NAMUR</th>
+                </tr>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Fonction</th>
+                    <th>Localité</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Doe</td>
+                    <td>John</td>
+                    <td>Directeur</td>
+                    <td>Namur</td>
+                </tr>
+                <tr>
+                    <td>Scofield</td>
+                    <td>Michael</td>
+                    <td>Détenu</td>
+                    <td>Chicago</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>Tancredi</td>
+                    <td>Médecin</td>
+                    <td>New-York</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <td colspan="3"><center>3 membres</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <table border="1">
+            <thead>
+                <tr>
+                   <th colspan="4">IEPSCF - NAMUR</th>
+                </tr>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Fonction</th>
+                    <th>Localité</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Scofield</td>
+                    <td>John</td>
+                    <td>Directeur</td>
+                    <td>Namur</td>
+                </tr>
+                <tr>
+                    <td>Michael</td>
+                    <td>Détenu</td>
+                    <td>Chicago</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>Tancredi</td>
+                    <td>Médecin</td>
+                    <td>New-York</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <td colspan="3"><center>3 membres</td>
+                </tr>
+            </tfoot>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Exercices</legend>
+        <table border="1">
+            <thead>
+                <tr>
+                   <th colspan="5">Membres du personnel</th>
+                </tr>
+                <tr>
+                    <th>Titre</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Fonction</th>
+                    <th>Localité</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Définitif</td>
+                    <td rowspan="2">Doe</td>
+                    <td>John</td>
+                    <td>Directeur</td>
+                    <td>Namur</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>Détenu</td>
+                    <td>Chicago</td>
+                </tr>
+                <tr>
+                    <td>Servais</td>
+                    <td>Dominique</td>
+                    <td>Médecin</td>
+                    <td>New-York</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Temporaire</td>
+                    <td>Lambert</td>
+                    <td>Aline</td>
+                    <td>Informaticienne</td>
+                    <td>Bruxelles</td>
+                </tr>
+                <tr>
+                    <td>Wagner</td>
+                    <td>Henriette</td>
+                    <td>Comptable</td>
+                    <td>Charleroi</td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</body>
+</html>

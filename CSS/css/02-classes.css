@@ -1,0 +1,38 @@
+/* Created: 2021-12-07 */
+/* Updated: 2021-12-07 */
+
+h1, 
+h2, 
+h3 {
+    font-family: verdana, sans-serif;
+}
+
+h1 {
+    color: brown;
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: green;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Classes CSS */
+/* Permet d'appliquer une excepetion*/
+/* Classe universelle */
+
+.small {
+    font-size: 10px;
+}
+
+/* Classe de sélecteur */
+
+h2.color {
+    color: indianred;
+}
