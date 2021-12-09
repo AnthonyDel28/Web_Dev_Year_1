@@ -107,7 +107,9 @@ WHERE idAlb NOT IN (
 --    id, nom de l'album, année
 --    remarque: les id sont dans l'ordre de création des album
 -- -----------------------------------------------------------------------------
-
+SELECT titreAlb, dateAlb, album.idAlb
+FROM album
+    LEFT JOIN pers_album ON album
 -- -----------------------------------------------------------------------------
 -- 07.dans quel album rencontre-t-on le plus de personnages grossiers ?
 --    id, nom de l'album, année
