@@ -1,0 +1,51 @@
+SELECT *
+FROM personnage
+;
+
+----------------------------------------------------------------------------------------------------------
+
+SELECT  nomPers AS `nom du personnage`, prenomPers AS `prénom du personnage`
+FROM    personnage
+WHERE   sexePers="F"
+;
+
+----------------------------------------------------------------------------------------------------------
+
+SELECT  nomPers AS `nom du personnage`, prenomPers AS `prénom du personnage`
+FROM    personnage
+WHERE   sexePers="F"
+ORDER BY nomPers ASC, prenomPers ASC
+;
+
+----------------------------------------------------------------------------------------------------------
+
+SELECT  nomPers AS `nom du personnage`, prenomPers AS `prénom du personnage`
+FROM    personnage
+WHERE   sexePers="F"
+ORDER BY nomPers ASC, prenomPers ASC
+;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+SELECT  nomPers AS `nom du personnage`, COUNT(idPers) AS `nbre de personnages masculins  portant ce nom`
+FROM    personnage
+WHERE   sexePers="F"
+
+GROUP BY nomPers
+
+ORDER BY nomPers ASC
+;
+
+-----------------------------------------------------------------------------------------------------------
+
+SELECT  nomPers AS `nom de personnages qui apparaissent plus d'une fois`, 
+        COUNT(idPers) AS `nbre de personnages masculins  portant ce nom`
+FROM    personnage
+WHERE   sexePers="F"
+
+GROUP BY nomPers
+HAVING COUNT(idPers)>=2
+
+ORDER BY nomPers ASC
+;
+
