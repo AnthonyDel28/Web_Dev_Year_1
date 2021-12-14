@@ -1,0 +1,172 @@
+# Translation of Plugins - User Profile Picture - Stable (latest release) in Dutch
+# This file is distributed under the same license as the Plugins - User Profile Picture - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-11-28 14:20:36+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: nl\n"
+"Project-Id-Version: Plugins - User Profile Picture - Stable (latest release)\n"
+
+#. Author URI of the plugin
+msgid "https://www.cozmoslabs.com"
+msgstr "https://www.cozmoslabs.com"
+
+#. Author of the plugin
+msgid "Cozmoslabs"
+msgstr "Cozmoslabs"
+
+#: metronet-profile-picture.php:206
+msgid "Select this option to disable the four image sizes User Profile Picture Creates."
+msgstr "Selecteer deze optie om de vier afbeeldingsformaten uit te schakelen die door gebruikersprofiel worden gemaakt."
+
+#: metronet-profile-picture.php:205
+msgid "Disable Image Sizes"
+msgstr "Afbeeldingsgroottes uitschakelen"
+
+#: metronet-profile-picture.php:202
+msgid "Disable Image Sizes?"
+msgstr "Afbeeldingsgroottes uitschakelen?"
+
+#: metronet-profile-picture.php:764 metronet-profile-picture.php:770
+msgid "Settings"
+msgstr "Instellingen"
+
+#: metronet-profile-picture.php:231
+msgid "Save Options"
+msgstr "Opties opslaan"
+
+#: metronet-profile-picture.php:198
+msgid "Select this option if you do not want User Profile Picture to show up in Gutenberg or do not plan on using the blocks."
+msgstr "Selecteer deze optie als je niet wilt dat de gebruikersprofielfoto in Gutenberg verschijnt of als je niet van plan bent de blokken te gebruiken."
+
+#: metronet-profile-picture.php:197
+msgid "Disable Gutenberg Blocks"
+msgstr "Gutenberg blokken uitschakelen"
+
+#: metronet-profile-picture.php:194
+msgid "Gutenberg Blocks"
+msgstr "Gutenberg blokken"
+
+#: metronet-profile-picture.php:190
+msgid "Welcome to User Profile Picture!"
+msgstr "Welkom bij gebruiksprofiel afbeelding!"
+
+#: metronet-profile-picture.php:181
+msgid "Your options have been saved."
+msgstr "Je instellingen zijn opgeslagen."
+
+#: metronet-profile-picture.php:1160
+msgid "You must have a role of editor or above to set a new profile image."
+msgstr "Je moet de rol van redacteur of hoger hebben om een nieuwe profielafbeelding in te stellen."
+
+#: metronet-profile-picture.php:1472
+msgid "Author Information"
+msgstr "Auteursinformatie"
+
+#: metronet-profile-picture.php:1470
+msgid "Author"
+msgstr "Auteur"
+
+#: gutenberg/class-gutenberg.php:381 metronet-profile-picture.php:1542
+#: dist/blocks.build.js:2
+msgid "Website"
+msgstr "Site"
+
+#: gutenberg/class-gutenberg.php:377 metronet-profile-picture.php:1538
+#: dist/blocks.build.js:2
+msgid "View all posts by"
+msgstr "Bekijk  alle  berichten van"
+
+#: gutenberg/class-gutenberg.php:70 gutenberg/class-gutenberg.php:343
+#: gutenberg/class-gutenberg.php:409 metronet-profile-picture.php:1514
+#: metronet-profile-picture.php:1570 dist/blocks.build.js:2
+msgid "View Website"
+msgstr "Bekijk site"
+
+#: gutenberg/class-gutenberg.php:66 gutenberg/class-gutenberg.php:330
+#: gutenberg/class-gutenberg.php:404 metronet-profile-picture.php:1509
+#: metronet-profile-picture.php:1565 dist/blocks.build.js:2
+msgid "View Posts"
+msgstr "Bekijk berichten"
+
+#: gutenberg/class-gutenberg.php:226 metronet-profile-picture.php:1471
+msgid "Latest Posts"
+msgstr "Laatste berichten"
+
+#: gutenberg/class-gutenberg.php:218 gutenberg/class-gutenberg.php:222
+msgid "Author Details"
+msgstr "Details van de auteur"
+
+#: metronet-profile-picture.php:333 metronet-profile-picture.php:384
+#: metronet-profile-picture.php:401 metronet-profile-picture.php:436
+#: metronet-profile-picture.php:806 metronet-profile-picture.php:812
+msgid "Click to Edit"
+msgstr "Klik om te bewerken"
+
+#: metronet-profile-picture.php:1164
+msgid "User not owner."
+msgstr "Gebruiker geen eigenaar."
+
+#: metronet-profile-picture.php:1117 metronet-profile-picture.php:1153
+msgid "You must be able to upload files."
+msgstr "Je moet bestanden kunnen uploaden."
+
+#: metronet-profile-picture.php:882
+msgid "Remove Profile Image"
+msgstr "Verwijder profiel afbeelding"
+
+#: metronet-profile-picture.php:1234 metronet-profile-picture.php:1268
+msgid "Profile picture not found."
+msgstr "Profielfoto niet gevonden."
+
+#: metronet-profile-picture.php:1113 metronet-profile-picture.php:1157
+#: metronet-profile-picture.php:1196 metronet-profile-picture.php:1225
+#: metronet-profile-picture.php:1261
+msgid "User not found."
+msgstr "Gebruiker niet gevonden."
+
+#. Description of the plugin
+msgid "Use the native WP uploader on your user profile page."
+msgstr "Gebruik de inheemse WP uploader op je gebruikersprofiel pagina ."
+
+#. Plugin URI of the plugin
+msgid "http://wordpress.org/plugins/metronet-profile-picture/"
+msgstr "http://wordpress.org/plugins/metronet-profile-picture/"
+
+#. Plugin Name of the plugin
+#: metronet-profile-picture.php:137 metronet-profile-picture.php:152
+#: metronet-profile-picture.php:153 metronet-profile-picture.php:162
+#: metronet-profile-picture.php:163 metronet-profile-picture.php:189
+msgid "User Profile Picture"
+msgstr "Profielfoto gebruiker"
+
+#: metronet-profile-picture.php:881
+msgid "Set Profile Image"
+msgstr "Profielafbeelding instellen"
+
+#: metronet-profile-picture.php:845
+msgid "Override Avatar?"
+msgstr "Avatar overschrijven?"
+
+#: metronet-profile-picture.php:793
+msgid "Profile Image"
+msgstr "Profielafbeelding"
+
+#: metronet-profile-picture.php:675 metronet-profile-picture.php:883
+msgid "Crop Thumbnail"
+msgstr "Thumbnail bijsnijden"
+
+#: metronet-profile-picture.php:331 metronet-profile-picture.php:382
+#: metronet-profile-picture.php:400 metronet-profile-picture.php:435
+#: metronet-profile-picture.php:804 metronet-profile-picture.php:810
+msgid "Upload or Change Profile Picture"
+msgstr "Profielfoto uploaden of wijzigen"
+
+#: metronet-profile-picture.php:334 metronet-profile-picture.php:385
+#: metronet-profile-picture.php:820
+msgid "Remove profile image"
+msgstr "Profiel afbeelding verwijderen"

@@ -1,0 +1,78 @@
+/* Created 2021-12-14
+Updated 2021-12-14 */
+
+.name{
+    color:darkorange;
+}
+
+/* Couleurs RGB(Red, Green, Blue) */
+/* Valeurs comprises entre 0 et 255 */
+
+
+.rgb{
+    color: rgb(255, 0, 0);
+    color: rgb(0, 255, 0);
+    color: rgb(0, 0, 255);
+    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    color: rgb(180, 150, 0);
+}
+
+/* Couleurs en pourcentages */
+
+.rgb-percent {
+    color: rgb(50%, 10%, 50%);
+}
+
+/* Couleurs en hexadécimal */
+/* Valeurs en base 16 (0 à 9 + de A à F) */
+
+
+.hexa {
+    color: #000000;
+    color: #000; /* Annotation courte */
+    color: #FFF;
+    color: #0000FF;  /* #00F */
+    color: #bb8867;
+}
+
+/* Couleurs HSL (roue chromatique) */ 
+/* H: hue (teinte) valeur de 0 à 360 
+S: saturation (impacte de la couleur) de 0% à 100%
+L: lightness (luminosité) de 0% à 100% */
+
+
+.hsl{
+    color: hsl(40, 50%, 50%);
+}
+
+i{
+    color:rgb(0, 0, 255);
+}
+
+/* La transparence */ 
+
+.background {
+    background-image: url('../img/back-transparency.jpg');
+    color: #FFF;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    color: #444;
+}
+
+/* Transparence RGBA() */
+/* La couche alpha est définie par une valeur comprise entre 0 et 1 */
+
+.alpha-rgba {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* La transparence est gérée par un couple de digits compris entre 0 et 99 */
+/* Utilistation également de l'annotation raccourcie */
+
+.alpha-hexa {
+    background-color: #FFFFFF80;
+}

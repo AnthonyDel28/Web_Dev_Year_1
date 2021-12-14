@@ -1,0 +1,393 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Progression Theme Elements - Onzo\n"
+"POT-Creation-Date: 2017-07-07 11:11-0700\n"
+"PO-Revision-Date: 2017-07-07 11:11-0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: progression-elements.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: importer/parsers.php:42 importer/parsers.php:72 importer/parsers.php:80
+msgid "There was an error when reading this WXR file"
+msgstr ""
+
+#: importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: importer/parsers.php:84 importer/parsers.php:89 importer/parsers.php:306
+#: importer/parsers.php:495
+msgid ""
+"This does not appear to be a WXR file, missing/invalid WXR version number"
+msgstr ""
+
+#: importer/radium-importer.php:203
+msgid "Demo already imported"
+msgstr ""
+
+#: importer/radium-importer.php:234
+msgid "Import Again"
+msgstr ""
+
+#: importer/radium-importer.php:238 importer/radium-importer.php:244
+msgid "Import Demo Data"
+msgstr ""
+
+#: importer/radium-importer.php:248
+msgid "Tips"
+msgstr ""
+
+#: importer/radium-importer.php:251
+msgid ""
+"The importer will not delete any pages, posts, or content.  It will only add "
+"content and adjust theme options."
+msgstr ""
+
+#: importer/radium-importer.php:252
+msgid ""
+"If the import times out or does not finish, please run the importer again."
+msgstr ""
+
+#: importer/radium-importer.php:253
+msgid ""
+"Running the importer mulitple times may duplicate your menu items. If you "
+"run the importer again, make sure to delete any navigation menus under "
+"Navigation > Menus.  You will not have delete any pages as those will not "
+"duplicate."
+msgstr ""
+
+#: importer/radium-importer.php:458
+msgid "Error importing settings! Please try again."
+msgstr ""
+
+#: importer/radium-importer.php:475 importer/radium-importer.php:480
+msgid ""
+"Error importing settings! Please check that you uploaded a customizer export "
+"file."
+msgstr ""
+
+#: importer/radium-importer.php:780
+msgid "Widget Import file could not be found. Please try again."
+msgstr ""
+
+#: importer/radium-importer.php:854
+msgid "Sidebar does not exist in theme (using Inactive)"
+msgstr ""
+
+#: importer/radium-importer.php:876
+msgid "Site does not support widget"
+msgstr ""
+
+#: importer/radium-importer.php:899
+msgid "Widget already exists"
+msgstr ""
+
+#: importer/radium-importer.php:948
+msgid "Imported"
+msgstr ""
+
+#: importer/radium-importer.php:951
+msgid "Imported to Inactive"
+msgstr ""
+
+#: importer/radium-importer.php:958
+msgid "No Title"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:134
+#: importer/wordpress-importer-backup.php:143
+#: importer/wordpress-importer-backup.php:194
+#: importer/wordpress-importer-backup.php:198
+#: importer/wordpress-importer-backup.php:207
+#: importer/wordpress-importer-new.php:132
+#: importer/wordpress-importer-new.php:141
+#: importer/wordpress-importer-new.php:192
+#: importer/wordpress-importer-new.php:196
+#: importer/wordpress-importer-new.php:205 importer/wordpress-importer.php:132
+#: importer/wordpress-importer.php:141 importer/wordpress-importer.php:192
+#: importer/wordpress-importer.php:196 importer/wordpress-importer.php:205
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:135
+#: importer/wordpress-importer-new.php:133 importer/wordpress-importer.php:133
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:178
+#: importer/wordpress-importer-new.php:176 importer/wordpress-importer.php:176
+msgid "All done."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:178
+#: importer/wordpress-importer-new.php:176 importer/wordpress-importer.php:176
+msgid "Have fun!"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:179
+#: importer/wordpress-importer-new.php:177 importer/wordpress-importer.php:177
+msgid "Remember to update the passwords and roles of imported users."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:199
+#: importer/wordpress-importer-new.php:197 importer/wordpress-importer.php:197
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:215
+#: importer/wordpress-importer-new.php:213 importer/wordpress-importer.php:213
+#, php-format
+msgid ""
+"This WXR file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:240
+#: importer/wordpress-importer-new.php:238 importer/wordpress-importer.php:238
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:266
+#: importer/wordpress-importer-new.php:264 importer/wordpress-importer.php:264
+msgid "Assign Authors"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:267
+#: importer/wordpress-importer-new.php:265 importer/wordpress-importer.php:265
+msgid ""
+"To make it easier for you to edit and save the imported content, you may "
+"want to reassign the author of the imported item to an existing user of this "
+"site. For example, you may want to import all the entries as <code>admin</"
+"code>s entries."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:269
+#: importer/wordpress-importer-new.php:267 importer/wordpress-importer.php:267
+#, php-format
+msgid ""
+"If a new user is created by WordPress, a new password will be randomly "
+"generated and the new user&#8217;s role will be set as %s. Manually changing "
+"the new user&#8217;s details will be necessary."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:279
+#: importer/wordpress-importer-new.php:277 importer/wordpress-importer.php:277
+msgid "Import Attachments"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:282
+#: importer/wordpress-importer-new.php:280 importer/wordpress-importer.php:280
+msgid "Download and import file attachments"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:286
+#: importer/wordpress-importer-new.php:284 importer/wordpress-importer.php:284
+msgid "Submit"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:299
+#: importer/wordpress-importer-new.php:297 importer/wordpress-importer.php:297
+msgid "Import author:"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:310
+#: importer/wordpress-importer-new.php:308 importer/wordpress-importer.php:308
+msgid "or create new user with login name:"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:313
+#: importer/wordpress-importer-new.php:311 importer/wordpress-importer.php:311
+msgid "as a new user:"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:321
+#: importer/wordpress-importer-new.php:319 importer/wordpress-importer.php:319
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:323
+#: importer/wordpress-importer-new.php:321 importer/wordpress-importer.php:321
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:324
+#: importer/wordpress-importer-new.php:322 importer/wordpress-importer.php:322
+msgid "- Select -"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:374
+#: importer/wordpress-importer-new.php:372 importer/wordpress-importer.php:372
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:423
+#: importer/wordpress-importer-new.php:424 importer/wordpress-importer.php:424
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:461
+#: importer/wordpress-importer-new.php:467 importer/wordpress-importer.php:467
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:505
+#: importer/wordpress-importer-backup.php:631
+#: importer/wordpress-importer-new.php:516
+#: importer/wordpress-importer-new.php:738
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:527
+#: importer/wordpress-importer-new.php:605 importer/wordpress-importer.php:605
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:548
+#: importer/wordpress-importer-new.php:642 importer/wordpress-importer.php:642
+#, php-format
+msgid "%s &#8220;%s&#8221; already exists."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:603
+#: importer/wordpress-importer-new.php:704
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:760
+#: importer/wordpress-importer-new.php:869 importer/wordpress-importer.php:862
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:767
+#: importer/wordpress-importer-new.php:876 importer/wordpress-importer.php:869
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:854
+#: importer/wordpress-importer-new.php:939 importer/wordpress-importer.php:956
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:867
+#: importer/wordpress-importer-new.php:952 importer/wordpress-importer.php:969
+msgid "Invalid file type"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:911
+#: importer/wordpress-importer-new.php:996 importer/wordpress-importer.php:1013
+msgid "Remote server did not respond"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:917
+#: importer/wordpress-importer-new.php:1002
+#: importer/wordpress-importer.php:1019
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:924
+#: importer/wordpress-importer-new.php:1009
+#: importer/wordpress-importer.php:1026
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:929
+#: importer/wordpress-importer-new.php:1014
+#: importer/wordpress-importer.php:1031
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:935
+#: importer/wordpress-importer-new.php:1020
+#: importer/wordpress-importer.php:1037
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:1034
+#: importer/wordpress-importer-new.php:1119
+#: importer/wordpress-importer.php:1136
+msgid "Import WordPress"
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:1041
+#: importer/wordpress-importer-new.php:1126
+#: importer/wordpress-importer.php:1143
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:1056
+#: importer/wordpress-importer-new.php:1141
+#: importer/wordpress-importer.php:1158
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (WXR) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: importer/wordpress-importer-backup.php:1057
+#: importer/wordpress-importer-new.php:1142
+#: importer/wordpress-importer.php:1159
+msgid "Choose a WXR (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: importer/wordpress-importer-new.php:1216
+#: importer/wordpress-importer.php:1233
+msgid ""
+"Import <strong>posts, pages, comments, custom fields, categories, and tags</"
+"strong> from a WordPress export file."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Progression Theme Elements - Onzo"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://progressionstudios.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Theme Elements for Progression Studios Theme"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Progression Studios"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://progressionstudios.com/"
+msgstr ""
