@@ -1,0 +1,63 @@
+/* Created 2021-12-14
+Updated 2021-12-14 */
+
+/* Unités absolues */ 
+/* Utiliser de préférence les unités relatives sauf si 
+contraintes graphiques */ 
+
+.pt {
+    font-size: 12pt; /* Le ppoint 12 pt = 16px */
+}
+
+.pc {
+    font-size: 1pc; /* Le pica 1 pc = 16px */
+}
+
+.mm {
+    font-size: 4.4mm;
+}
+
+.px {
+    font-size: 16px; /* Unité de mesure par défaut relatif à l'engine */
+}
+
+
+/* Unités relatives */ 
+
+/* Utilisé le plus souvent pour les espacements (templating) */ 
+
+.percent {
+    font-size: 100%;
+}
+
+
+/* En (cadratain) 1em = 16px */ 
+/* Il fait toujours référence à l'élément parent */
+
+.em {
+    font-size: 1em;
+}
+
+/* rem (root em)  1 rem = 16px */
+
+.rem {
+    font-size: 1rem;
+}
+
+/* Différence entre em et rem */ 
+
+/* li {
+    font-size: 2em;  !!! Double la valeur de l'élément imbriqué 
+} */
+
+li {
+    font-size: 2rem;
+}
+
+div {
+    font-size: 2em;
+}
+
+div p {
+    font-size: 1rem;
+}

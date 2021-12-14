@@ -1,0 +1,50 @@
+/* Created 2021-12-14
+Updated 2021-12-14 */
+
+/* Les typographies sur le web sont regroupées en 5 familles */ 
+
+/*  
+    -serif: possède un trait (ligature) plus ou moins prononcé pour 
+    chaque lettre
+
+    - sans-serif: sans empattement avec des lignes épurées 
+    - monospace: toutes les lettres ont la même largeur fixe (look mécanique)
+    - cursive: imite l'écriture humaine 
+    - fantasy: polices décoratives
+
+*/
+
+/* Typo uniquement basée sur la famille */
+
+.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Plusieurs fonts propoées. Mettre toujours la famille en dernier */ 
+
+.lucida {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.courrier {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Police embarquée */ 
+/* Directive @font-face */
+
+@font-face {
+    font-family: Quicksand;
+    src: url('../css/Quicksand/Quicksand_Bold.otf');
+}
+
+
+/* Police CDN */
+
+.quicksand {
+    font-family: Quicksand, sans-serif;
+}
+
+.prime {
+    font-family: 'Redacted Script', cursive;
+}
