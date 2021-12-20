@@ -1,0 +1,25 @@
+/* Created by Anthony Delmeire on 2021-12-20 */
+
+.rectangle {
+    height: 100%;
+    width: 1400px;
+    background-color: #160e0ed7;
+    position: absolute;
+    top: 0%;
+    left: 240px;
+}
+
+body {
+    background-image: url(../img/background_portail.jpg);
+}
+
+.logo_head {
+    position: absolute;
+    left: 250px;
+}
+
+.spiderman {
+    position: absolute;
+    left: 1150px;
+    top: 50px;
+}
