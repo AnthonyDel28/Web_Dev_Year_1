@@ -30,9 +30,58 @@
 		2) Dans la liste déroulante, prévoir deux groupes (romans, sciences humaines,...) et quelques livres par groupe.
 		3) Pour le nombre de livres, min 1, affichez 1 et max 10
 	 -->
+	 <b>Librairie Lamartine &emsp;</b>
+          <a href="./index.html">Accueil</a><a>&nbsp;|</a> 
+        <a href="./portrait.html">Portrait</a><a>&nbsp;|</a> 
+        <a href="./lexique.html">Notre lexique</a><a>&nbsp;|</a> 
+        <a href="./contact.html">Contact</a><hr></p>
 	<fieldset>
 		<legend>Nous contacter</legend>
 		<!-- Votre formulaire -->
+		<label>Genre</label>
+		<input type="radio" name="gender" id="m" value="Monsieur">
+		<label for="m">Monsieur</label>
+		<input type="radio" name="gender" id="f" value="Femme">
+		<label for="f">Madame</label>
+		<input type="radio" name="gender" id="mme" value="Mademoiselle">
+		<label for="mme">Mademoiselle</label><br>
+		
+		<form action="#" method="post">
+			<label for="name">Votre nom</label>&nbsp;&nbsp;
+			<input type="text" id="name" name="name" placeholder="Votre nom et prénom">
+		</form>
+		<form action="#" method="post">
+			<label for="email">Votre Email</label>
+			<input type="text" id="email" name="email">
+		</form>
+		<form action="#" method="post">
+			<label for="book">Votre livre</label>&nbsp;&nbsp;
+			<select name="book" id="book">
+				<option value="">Choisissez</option>
+				<optgroup label="Romans">
+					<option value="hiverdumonde">L'hiver du monde</option>
+					<option value="Le bruit des choses qui tombent">Le bruit des choses qui tombent</option>
+				</optgroup>
+				<optgroup label="Sciences humaines">
+					<option value="Remède Mortel">Remède Mortel</option>
+				</optgroup>
+			</select>
+		</form>
+		<form action="#" method="post">
+			<label for="nombre">Nombre</label>&emsp;&nbsp;&nbsp;
+			<input type="number" id="nombre" name="nombre" min="1" max="10" value="1">
+		</form>
+		<form action="#" method="post">
+			<label for="satisfaction">Votre satisfaction</label>
+			<input type="range" name="skill" id="skill" min="0" max="10" 
+            oninput="document.getElementById('level').textContent=value">
+            <span id="level">5</span>
+		</form>
+		<form action="#" method="post">
+			<label for="commentaire">Votre commentaire</label><br>
+			<textarea name="com" id="com" cols="30" rows="10">Commentaire ici ...</textarea><br>
+        	<input type="submit" value="Acheter">
+		</form>
 	</fieldset>
 </body>
 </html>
