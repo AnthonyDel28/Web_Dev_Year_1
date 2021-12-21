@@ -1,0 +1,48 @@
+/* Created 2021-12-21 */
+
+.bold {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+/* lighter ou bolder dépendent de l'élément parent */ 
+.lighter {
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+/* font-style */ 
+/* Italic vs Oblique */
+/* Italic dépend de la version de la typo */
+
+.italic {
+    font-style: italic;
+}
+
+i {
+    font-style: normal;
+    font-weight: bold;
+}
+
+em {
+    font-style: normal;
+    color:darkorange;
+}
+
+.stretch {
+    font-stretch:ultra-condensed;
+}
+
+.variant {
+    font-variant: small-caps;
+}
+
+h3 {
+    font-variant-caps: petite-caps;
+}
+
+/* Propriété de regroupement */ 
+

@@ -1,0 +1,33 @@
+/* Created 2021-12-21 */
+
+/* Alignements */
+/* Horizontal */
+
+.justify {
+    text-align: justify;
+}
+
+.center {
+    text-align: center;
+}
+
+.indent {
+    text-indent: 5rem;
+}
+
+.w-s {
+    word-spacing: 0.2rem;
+}
+
+.l-s {
+    letter-spacing: 0.1rem;
+}
+
+.line_height {
+    line-height: 2rem;
+}
+
+.vertical {
+    padding: 60px;
+    text-align: center;
+}

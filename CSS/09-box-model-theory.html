@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/09-box-model.css">
+    <title>Box model</title>
+</head>
+<body>
+    
+    <h2>Le modèle de boîte - Box Model</h2>
+
+    <fieldset>
+        <legend>Représentation schématique</legend>
+        <img src="img/box-w3c.png" alt="">
+    </fieldset>
+
+    <fieldset>
+        <legend>Explications</legend>
+        <p>Tout élément de bloc en HTML est représenté par une imbrication de quatre boîtes rectangulaires.  Chacune de ces boîtes est composée par une propriété  définie en CSS</p>
+        <ol>
+            <li>La boîte centrale appelée "Content" définit le contenu de l'élément (vos paragraphes par exemples).  Ce sont les propriétés width et height qui vont définir la largeur et la hauteur de cette boîte.  Par défaut (si non spécifié), la largeur fait toujours 100% de l'espace disponible et la hauteur s'adapte au contenu.</li>
+            <li>La deuxième boîte contient les marges internes de l'élément (espaces internes) qui sont définies par la propriété padding.</li>
+            <li>La troisième boîte est composée des bordures de l'élément.  Il s'agit ici de la propriété border et des ses différentes valeurs.  Sur le schéma pour des raisons de visibilité l'épaisseur a été exagérée.</li>
+            <li>La troisième boîte est composée des bordures de l'élément.  Il s'agit ici de la propriété border et des ses différentes valeurs.  Sur le schéma pour des raisons de visibilité l'épaisseur a été exagérée</li>
+        </ol>
+    <p>Chaque navigateur dispose de différents outils de développement qui nous permettent d'inspecter notamment les valeurs affectées à la box model de chaque élément HTML.  Sur Chrome le raccourci est F12 ou clic droit sur la page et choisir Inspecter.</p>
+    </fieldset>
+</body>
+</html>
