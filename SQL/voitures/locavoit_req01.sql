@@ -1,0 +1,16 @@
+-- locavoit2020 (categories, voitures, locations, clients)
+-- exercices sur une seule table
+-- --------------------------------------------------------
+-- 01 liste des catégories
+-- 02 liste des catégories classées du plus gros véhicule au plus petit (nbre de places, nbre de bagagges)
+-- 03 liste des catégories ayant au moins 5 places
+-- 04 liste des catégories ayant au moins 5 places et 3 bagagges
+--
+-- 05 liste des voitures encore en service
+-- 06 liste des voitures hors service
+-- 07 liste des voitures de catégorie A et C encore en service
+--
+-- 08 liste des locations terminées : idLoc, voitureLoc, clientLoc, durée de la location, km parcourus
+-- 09 liste des location en cours : idLoc, voitureLoc, clientLoc, nbre de jours depuis début de la location
+-- 10 pour chaque voiture ayant fait l'objet d'une location : voitureLoc, nbre de locations, total km parcourus
+-- 11 liste des voitures ayant fait l'objet de plus d'une location : voitureLoc, nbre de locations

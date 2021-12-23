@@ -1,0 +1,16 @@
+-- locavoit2020 (categories, voitures, locations, clients)
+-- exercices sur plusieurs tables
+-- --------------------------------------------------------
+-- 01 liste des voitures encore en service + infos catégorie (desc, portes, places, prix...)
+-- 02 liste des voitures encore en service de 5 places au minimum + infos catégorie (desc, portes, places, prix...)
+--
+-- 03 liste des clients + nombre de locations effectuées (terminées ou en cours)
+-- 04 liste des clients + nombre de km parcourus
+-- 05 liste des clients + les catégories de véhicules loués par ces clients
+--
+-- 06 pour chaque catégorie de véhicule : nbre de locations + nbre de clients différents
+-- 07 quelle est la catégorie qui rencontre le plus de succès (le plus de locations) ?
+-- 08 pour chaque catégorie : nbre de locations, nbre de locations terminées, nbre de location en cours, nbre de km parcourus
+--
+--
+-- 09 liste des voitures disponibles à la location (difficile)

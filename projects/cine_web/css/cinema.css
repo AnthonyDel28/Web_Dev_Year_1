@@ -1,0 +1,18 @@
+/* Created 2021-12-22 */
+
+.block {
+    height: 100%;
+    width: 80%;
+    background-color: rgba(22, 14, 14, 0.842);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    color: honeydew;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    position: relative;
+    top: -250px;
+    left: 1000px;
+}
