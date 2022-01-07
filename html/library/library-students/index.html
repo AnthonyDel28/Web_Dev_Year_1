@@ -1,61 +1,128 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/icofont.min.css">
-        <link rel="stylesheet" href="css/index.css">
-        <title>Librairie Lamartine</title>
-    </head>
-    
-    <body><p>
-          <b class="title"><span style="color: brown;">Libraire</span><span style="color: darkgray;"> Lamartine </span>&emsp;</b>
-          <i class="icofont-home"></i>
-          <a href="./index.html" class="menu_element">Accueil</a><a>&nbsp;|</a> 
-        <a href="./portrait.html" class="menu_element">Portrait</a><a>&nbsp;|</a> 
-        <a href="./lexique.html" class="menu_element">Notre lexique</a><a>&nbsp;|</a> 
-        <a href="./contact.html" class="menu_element">Contact</a><hr></p>
-
-          <h1><b>Nos coups de coeur</b></h1>
-            <table>
-                    <h3><em>L'hiver du monde</em><hr style="width:50%"; align="left"; color="darkgrey"></h3>
-                    <h4><b>Ken Follet (Robert Laffont - 2012)</b></h4>
-                    <td><img src="images/small/follet.jpg"></td>
-                    <td>
-                        <li>Prix conseillé: <strike>36,00€</strike></li>
-                        <li>Prix: <b>32,00€</b></li>
-                        <li>Pages: 565</li>
-                        <p>Dans La Chute des géants, cinq familles – américaine, russe, allemande, anglaise et galloise – se sont croisées, aimées et déchirées au rythme de la Première Guerre mondiale et de la Révolution russe. À l’aube des grands bouleversements politiques, sociaux et économiques de la seconde moitié du XXe siècle, ce sont désormais leurs enfants qui ont rendez-vous avec l’Histoire.
-                            </p><a href="/">Lire la suite</a>
-                    </td>
-            </table>  &nbsp;<i class="icofont-star">&nbsp;</i><i class="icofont-star">&nbsp;</i><i class="icofont-star">&nbsp;</i><i class="icofont-star"></i>
-
-            <table>
-                <h3><br>Le bruit des choses qui tombent<hr style="width:50%"; align="left"; color="darkgrey"></h3>
-                <h4><b>Juan Gabriel Vasquez (Seuil - 2012)</b></h4>
-                <td><img src="images/small/vasquez.jpg"></td>
-                <td>
-                    <li>Prix conseillé: <del>23,00€</del></li>
-                    <li>Prix: <b>20,00€</b></li>
-                    <li>Pages: 403</li>
-                    <p>Dans la Bogota corrompue et violente des années 90, Antonio Yammara, jeune professeur de droit, se lie d’amitié avec Ricardo Laverde, un homme mystérieux qui le fascine. Un soir, alors qu’ils marchent tous les deux dans la rue, deux hommes à moto tuent Ricardo et blessent gravement Antonio.
-                        </p><a href="/">Lire la suite</a>
-                </td>
-            </table> &nbsp;<i class="icofont-star">&nbsp;</i><i class="icofont-star">&nbsp;</i><i class="icofont-star"></i>
-
-            <table>
-                <h3><b><br><em>Remède mortel</em></b></h3>
-                <h4><b>Harlan Coben (Pocket - 2014)</b></h4>
-                <td><img src="images/small/coben.jpg"></td>
-                <td>
-                    <li>Prix conseillé: <del>28,00€</del></li>
-                    <li>Prix: <b>24,00€</b></li>
-                    <li>Pages: 706</li>
-                    <p>New-York, fin des années 1980. Le docteur Harvey Riker a peut-être découvert un vaccin contre le sida.
-                        Une formidable avancée qui, cependant, gêne certains intérêts et lobbies. La mort de l'associé d'Harvey et les meurtres sauvages de deux de ses patients pourraient bien être une menace personnelle.
-                        </p><a href="/">Lire la suite</a>
-                </td>
-            </table> &nbsp;<i class="icofont-star">&nbsp;</i><i class="icofont-star">&nbsp;</i><i class="icofont-star">&nbsp;</i><i class="icofont-star"></i>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Coups de coeur</title>
+	<!-- CSS Icofont -->
+	<link rel="stylesheet" href="css/icofont.min.css">
+	<!-- CSS Custom -->
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- Custome fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<p>
+		<span class="main_title">Libraire <span style="color: grey;">Lamartine</span></span>
+		<i class="icofont-home"></i>
+		<a href="index.html" class="menu_item">Accueil</a> |
+		<a href="portrait.html" class="menu_item">Portrait</a> |
+		<a href="lexique.html" class="menu_item">Notre lexique</a> |
+		<a href="contact.html" class="menu_item">Contact</a>
+	</p>
+	<hr>
+	<h1>Nos coups de coeurs</h1>
+	<table>
+		<!-- L'hiver du monde -->
+		<div>
+		<tr>
+			<td colspan="2">
+				<span class="book_title">L'hiver du monde</span>
+				<hr width="450">
+				<h3>Ken Follet <small>(Robert Laffont - 2012)</small></h3>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="images/large/follet.jpg">
+					<img src="images/small/follet.jpg" alt="Cover">
+				</a><br>
+				<div class="note">
+				<i class="icofont-star"></i>
+				<i class="icofont-star"></i>
+				<i class="icofont-star"></i>
+				<i class="icofont-star"></i>
+				</div>
+			</td>
+			<td>
+				<div class="vl"></div>
+				<ul>
+					<i class="icofont-money"></i> <span class="price"> Prix conseillé: <del>36,00&euro;</del></span><br>
+					<i class="icofont-money-bag"></i><span class="price"> Prix: <b>32,00&euro;</b></span><br>
+					<i class="icofont-page"></i><span class="price"> Pages: 565</span>
+				</ul>
+				<p class="description">Dans La Chute des géants, cinq familles – américaine, russe, allemande, anglaise et galloise – se sont croisées, aimées et déchirées au rythme de la Première Guerre mondiale et de la Révolution russe. À l’aube des grands bouleversements politiques, sociaux et économiques de la seconde moitié du XX<sup>e</sup> siècle, ce sont désormais leurs enfants qui ont rendez-vous avec l’Histoire.</p>
+				<a href="#" style="color: brown; text-decoration: none; font-family: 'Lato', sans-serif; font-weight: 700;">Lire la suite</a>
+			</td><br>
+		</tr>
+		<!-- Le bruit des choses qui tombent -->
+		<tr>
+			<td colspan="2">
+				<p class="book_title">Le bruit des choses qui tombent</p>
+				<hr width="450">
+				<h3>Juan Gabriel Vasquez <small>(Seuil - 2012)</small></h3>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="images/large/vasquez.jpg">
+					<img src="images/small/vasquez.jpg" alt="Cover">
+				</a><br>
+				<div class="note">
+					<i class="icofont-star"></i>
+					<i class="icofont-star"></i>
+					<i class="icofont-star"></i>
+					<i class="icofont-star" style="color: rgb(75, 74, 74);"></i>
+				</div>
+			</td>
+			<td>
+				<div class="vl"></div>
+				<ul>
+					<i class="icofont-money"></i> <span class="price"> Prix conseillé: <del>20,00&euro;</del></span><br>
+					<i class="icofont-money-bag"></i><span class="price"> Prix: <b>17,00&euro;</b></span><br>
+					<i class="icofont-page"></i><span class="price"> Pages: 403</span>
+				</ul>
+				<p class="description">Dans la Bogota corrompue et violente des années 90, Antonio Yammara, jeune professeur de droit, se lie d’amitié avec Ricardo Laverde, un homme mystérieux qui le fascine. Un soir, alors qu’ils marchent tous les deux dans la rue, deux hommes à moto tuent Ricardo et blessent gravement Antonio.</p>
+				<p><a href="#" style="color: brown; text-decoration: none; font-family: 'Lato', sans-serif; font-weight: 700;">Lire la suite</a></p>	
+			</td>
+		</tr>
+		<!-- Remède mortel -->
+		<tr>
+			<td colspan="2">
+				<p class="book_title">Remède mortel</p>
+				<hr width="450">
+				<h3>Harlan Coben <small>(Pocket - 2014)</small></h3>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="images/large/coben.jpg">
+					<img src="images/small/coben.jpg" alt="Cover">
+				</a><br>
+				<div class="note">
+					<i class="icofont-star"></i>
+					<i class="icofont-star"></i>
+					<i class="icofont-star"></i>
+					<i class="icofont-star"></i>
+				</div>
+			</td>
+			<td>
+				<div class="vl"></div>
+				<ul>
+					<i class="icofont-money"></i> <span class="price"> Prix conseillé: <del>28,00&euro;</del></span><br>
+					<i class="icofont-money-bag"></i><span class="price"> Prix: <b>24,00&euro;</b></span><br>
+					<i class="icofont-page"></i><span class="price"> Pages: 706</span>
+				</ul>
+				<p class="description">New-York, fin des années 1980. Le docteur Harvey Riker a peut-être découvert un vaccin contre le sida. Une formidable avancée qui, cependant, gêne certains intérêts et lobbies. La mort de l'associé d'Harvey et les meurtres sauvages de deux de ses patients pourraient bien être une menace personnelle.</p>
+				<p><a href="#" style="color: brown; text-decoration: none; font-family: 'Lato', sans-serif; font-weight: 700;">Lire la suite</a></p>	
+			</td>
+		</tr>
+	</table>
+	<a href="#" class="icofont-circled-up"></a><br>
+</body>
+</html>

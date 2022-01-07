@@ -1,10 +1,90 @@
 /* CSS Library */
 
 body {
-    margin: 2% 15%;
+    margin: 2% 10%;
     font-family: sans-serif;
 }
 
+i.icofont-home {
+    color: rgb(122, 122, 122);
+    font-size: 20px;
+}
+
 i {
-    color: rgb(255, 115, 0);
+    color: brown;
+}
+
+.main_title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(167, 34, 34);
+    margin-right: 40px;
+}
+
+.menu_item {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: gray;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: grey;
+    margin-bottom: 25px;
+}
+
+hr {
+    margin-left: 0;
+}
+
+.note {
+    color: rgb(180, 43, 43);
+    margin-left: 35px;
+}
+
+.book_title {
+    color: brown;
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.description {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: rgb(112, 112, 112);
+    font-weight: 400;
+}
+
+.price {
+    font-family: 'Lato', sans-serif;
+    color: grey;
+}
+
+.vl {
+    border-left: 1px solid rgb(179, 179, 179);
+    height: 60px;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.icofont-circled-up {
+    margin: 360px 1500px 90px;
+    text-decoration: none;
+    font-size: 35px;
+    color: brown;
 }
