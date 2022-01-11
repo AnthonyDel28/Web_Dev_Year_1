@@ -1,0 +1,26 @@
+/* Created 2022-01-11 */ 
+
+.image {
+    width: 300px;
+    border: 2px solid chartreuse;
+    border-radius: 50px 10px;
+}
+
+.left {
+    margin: 0 1rem 1rem 0;
+    float: left;
+}
+
+.right {
+    margin: 1rem 0 1rem 1rem;
+    float: right;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.round {
+    border-radius: 50%;
+}

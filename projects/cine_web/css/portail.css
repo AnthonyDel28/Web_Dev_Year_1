@@ -54,13 +54,13 @@ body {
 }
 
 .kylo_ren {
-    position: absolute;
-    right: 1500px;
-    top: 50px;
+    position: relative;
+    right: 1100x;
+    top: 30px;
 }
 
 .spiderman {
-    position:absolute;
-    left: 1200px;
+    position: absolute;
+    right: 1400x;
     bottom: 170px;
 }

@@ -82,9 +82,13 @@ hr {
     margin-top: 15px;
 }
 
-.icofont-circled-up {
-    margin: 360px 1500px 90px;
-    text-decoration: none;
-    font-size: 35px;
-    color: brown;
+.top {
+    text-align: right;
+}
+
+.top i {
+    padding: 8px;
+    background-color: brown;
+    color: white;
+    border-radius: 180px;
 }
