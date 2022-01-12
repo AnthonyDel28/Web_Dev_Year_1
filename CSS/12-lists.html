@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les listes</title>
     <link rel="stylesheet" href="css/icofont.min.css">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/12-lists.css">
+    <link rel="stylesheet" href="css/template.css">
 </head>
 <body>
     <fieldset>
         <legend>Les listes numérotées</legend>
         <!-- Listes ordonnées -->
         <!-- ol>li*5{html 0$} -->
-        <ol>        
+        <ol class="none">         
             <li>html 01</li>
             <li>html 02</li>
             <li>html 03</li>
@@ -21,7 +21,7 @@
             <li>html 05</li>
         </ol>
 
-        <ol>
+        <ol class="alpha">
             <li>html 01</li>
             <li>html 02</li>
             <li>html 03</li>
@@ -29,7 +29,7 @@
             <li>html 05</li>
         </ol>
 
-        <ol>
+        <ol class="zero">
             <li>html 01</li>
             <li>html 02</li>
             <li>html 03</li>
@@ -37,7 +37,7 @@
             <li>html 05</li>
         </ol>
 
-        <ol>
+        <ol class="position">
             <li>html 01</li>
             <li>html 02</li>
             <li>html 03</li>
@@ -58,7 +58,7 @@
         <legend>Les listes à puces</legend>
         
         <!-- Listes ordonnées -->
-        <ul>        
+        <ul class="circle">        
             <li>html 01</li>
             <li>html 02</li>
             <li>html 03</li>
@@ -66,7 +66,7 @@
             <li>html 05</li>
         </ul>
         <!-- Prefer icon vs image -->
-        <ul>
+        <ul class="none">
             <li><i class="icofont-file-html5"></i> html 01</li>
             <li><i class="icofont-file-html5"></i> html 02</li>
             <li><i class="icofont-file-html5"></i> html 03</li>
@@ -74,7 +74,7 @@
             <li><i class="icofont-file-html5"></i> html 05</li>
         </ul>
 
-        <ul>        
+        <ul class="image">        
             <li>html 01</li>
             <li>html 02</li>
             <li>html 03</li>
@@ -86,7 +86,7 @@
             <legend>Menu horizontal (navbar)</legend>
             <h3>Version liens simples</h3>
             <nav>
-                <ul>
+                <ul class="menu-links">
                     <li><a href="">Home</a></li>
                     <li><a href="">About us</a></li>
                     <li><a href="">Our team</a></li>
@@ -96,7 +96,7 @@
             </nav>
             <h3>Version avec des boutons</h3>
             <nav>
-            <ul>
+            <ul class="menu-links">
                 <li><a href="">Home</a></li>
                 <li><a href="">About us</a></li>
                 <li><a href="">Our team</a></li>

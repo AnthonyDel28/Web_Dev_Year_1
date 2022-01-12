@@ -1,2 +1,55 @@
 /* Created 2022-01-11 */ 
+/* Listes numérotées */ 
 
+.none {
+    list-style-type: none;
+}
+
+.alpha {
+    list-style-type: upper-alpha;
+}
+
+.zero {
+    list-style-type: decimal-leading-zero;
+}
+
+.position {
+    list-style-position: inside;
+}
+
+/* Listes à puces */
+
+.circle {
+    list-style-type: circle;
+}
+
+.image li {
+    list-style-type: none;
+    list-style-image: url('/web_dev_year_1/CSS/img/pencil.png');
+}
+
+/* Menu */ 
+/* Simple */
+
+nav {
+    background-color: darkgoldenrod;
+}
+
+.menu-links li {
+    padding: 0.8rem;
+    display: inline;
+}
+
+.menu-links {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-links a:hover {
+    color: yellowgreen;
+}
