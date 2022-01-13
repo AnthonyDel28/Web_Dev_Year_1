@@ -1,0 +1,79 @@
+/* Created 13_01_2022 by AnthonyDel28 */
+/* Marvel Hub (student project) */
+
+.topnav {
+    background-color: #ee171f;
+    overflow: hidden;
+    margin-top: 45px;
+    padding-left: 700px;
+    margin-left: 50px;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 3;
+}
+
+.topnav a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    z-index: 3;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.logo {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: 1px solid #fff;
+    z-index: 4;
+}
+
+body {
+    background-image: url('../img/wllp.jpg');
+    background-size: cover;
+    background-position-y: center; 
+}
+
+.trailer {
+    position: absolute;
+    left: 950px;
+    top: 230px
+}
+
+.layer {
+    background-color: rgba(26, 26, 26, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.block {
+    height: 250px;
+    width: 100%;
+    background-color: #ee171f;
+    position: relative;
+    top: 650px;
+    border: 1px solid blanchedalmond;
+    z-index: 2;
+}
+
+.thor {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+    z-index: 1;
+}
+
+.wanda {
+    object-fit: contain
+}
