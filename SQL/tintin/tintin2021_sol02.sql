@@ -5,7 +5,7 @@
 
 -- -----------------------------------------------------------------------------
 -- 01.pour chaque personnage -> tous les pays visités :
---    nom, prénom, sexe, pays (nom du pays)  
+--    nom, prénom, sexe, pays (nom du pays)
 --    classés par ordre alphabétique sur personnage et pays
 -- -----------------------------------------------------------------------------
 SELECT DISTINCT nomPers, prenomPers, sexePers, nomPays
@@ -19,7 +19,7 @@ ORDER BY nomPers ASC, prenomPers ASC, nomPays ASC
 
 -- -----------------------------------------------------------------------------
 -- 02.pour chaque personnage méchant -> tous les pays visités :
---    nom, prénom, sexe, pays (nom du pays)  
+--    nom, prénom, sexe, pays (nom du pays)
 --    classés par ordre alphabétique sur personnage et pays
 -- -----------------------------------------------------------------------------
 SELECT DISTINCT nomPers, prenomPers, sexePers, nomPays
@@ -49,7 +49,7 @@ ORDER BY `nombre de pays visités` DESC
 
 -- -----------------------------------------------------------------------------
 -- 04.liste des pays dans lesquels on ne trouve aucun personnage féminin :
---    pays (nom du pays)  
+--    pays (nom du pays)
 --    classés par ordre alphabétique
 -- -----------------------------------------------------------------------------
 SELECT Pays.idPays, nomPays
@@ -107,29 +107,62 @@ WHERE idAlb NOT IN (
 --    id, nom de l'album, année
 --    remarque: les id sont dans l'ordre de création des album
 -- -----------------------------------------------------------------------------
-SELECT titreAlb, dateAlb, album.idAlb
+SELECT  titreAlb, dateAlb, album.idalb
 FROM album
-    LEFT JOIN pers_album ON album
+    LEFT JOIN pers_album ON album.idAlb = pers_album.idAlb
+    LEFT JOIN personnage ON pers_album.idPers = personnage.idPers
+WHERE sexePers = "F"
+ORDER BY album.idalb ASC
+LIMIT 1
+;
+
 -- -----------------------------------------------------------------------------
 -- 07.dans quel album rencontre-t-on le plus de personnages grossiers ?
 --    id, nom de l'album, année
 -- -----------------------------------------------------------------------------
+SELECT album.idAlb, titreAlb, dateAlb -- ,COUNT(DISTINCT idPers)
+FROM album
+  LEFT JOIN juron_album ON album.idAlb = juron_album.idAlb
+GROUP BY album.idAlb
+ORDER BY COUNT(DISTINCT idPers) DESC
+LIMIT 1
+;
 
 -- -----------------------------------------------------------------------------
 -- 08.personnage féminin le plus grossier
 --         (qui pronnonce le plus souvent des jurons):
 --    nom, prénom
 -- -----------------------------------------------------------------------------
+SELECT nomPers, prenomPers -- ,COUNT(idJur)
+FROM personnage
+  LEFT JOIN juron_album ON personnage.idPers = juron_album.idPers
+WHERE sexePers = "F"
+GROUP BY personnage.idPers
+ORDER BY COUNT(idJur) DESC
+LIMIT 1
+;
 
 -- -----------------------------------------------------------------------------
 -- 09.personnage féminin qui connait le plus de jurons :
 --    nom, prénom
 -- -----------------------------------------------------------------------------
+SELECT nomPers, prenomPers -- ,  COUNT(DISTINCT idJur)
+FROM personnage
+  LEFT JOIN juron_album ON personnage.idPers = juron_album.idPers
+WHERE sexePers = "F"
+GROUP BY personnage.idPers
+ORDER BY COUNT(DISTINCT idJur) DESC
+LIMIT 1
+;
 
 -- -----------------------------------------------------------------------------
 -- 10.noms de personnage qui apparaissent plus d'une fois :
 --    ex: ALCAZAR (le général et sa femme)
 --    nom, nb de personnage
 -- -----------------------------------------------------------------------------
-
+SELECT nomPers, COUNT(idPers) as `nb de personnage`
+FROM personnage
+GROUP BY nomPers
+HAVING COUNT(idPers) > 1
+;
 

@@ -155,22 +155,45 @@ ORDER BY nomJur;
 --    idAlb, titre, idJur, juron (nomJur)
 --    classés par ordre alpahbétique sur titre, nom du juron
 ---------------------------------------------------------------------------
-SELECT DISTINCT titreAlb AS `titre album`
-                juron.idJur,
-                nomJur AS `nom du juron`
-FROM juron
-    LEFT JOIN juron_album ON juron.idJur = juron_album.idJur
+SELECT DISTINCT 
+        album.idAlb,
+        titreAlb AS `titre album`,
+        juron_album.idJur,
+        nomJur AS `juron`
+FROM album
+    LEFT JOIN juron_album ON album.idAlb = juron_album.idAlb
+    LEFT JOIN juron ON juron_album.idJur = juron.idJur
     LEFT JOIN personnage ON juron_album.idPers = personnage.idPers
 WHERE nomPers = 'tintin'
-ORDER BY 'nom du juron';
-
+ORDER BY titreAlb ASC, nomJur ASC
+; 
 -----------------------------------------------------------------------------
 -- 13.pour chaque album, le nombre de jurons DIFFERENTS prononcés par Tintin
 --    idAlb, titre, nombre de jurons
 --    classés par ordre alpahbétique sur titre
 -----------------------------------------------------------------------------
+SELECT  album.idAlb,
+        titreAlb AS `titre album`,
+        COUNT(DISTINCT juron_album.idJur) AS `nbre de jurons`
+FROM album
+    LEFT JOIN juron_album ON album.idAlb = juron_album.idAlb
+    LEFT JOIN juron ON juron_album.idJur = juron.idJur
+    LEFT JOIN personnage ON juron_album.idPers = personnage.idPers
+WHERE nomPers = 'tintin'
+GROUP BY idAlb;
 
 -- -----------------------------------------------------------------------------
 -- 14.les 5 album dans lesquels tintin prononce le plus de jurons DIFFERENTS
 --    idAlb, titre, nombre de jurons
 -- -----------------------------------------------------------------------------
+SELECT  album.idAlb,
+        titreAlb AS `titre album`,
+        COUNT(DISTINCT juron_album.idJur) AS `nbre de jurons`
+FROM album
+    LEFT JOIN juron_album ON album.idAlb = juron_album.idAlb
+    LEFT JOIN juron ON juron_album.idJur = juron.idJur
+    LEFT JOIN personnage ON juron_album.idPers = personnage.idPers
+WHERE nomPers = 'tintin'
+GROUP BY idAlb
+ORDER BY `nbre de jurons` DESC
+LIMIT 5;
