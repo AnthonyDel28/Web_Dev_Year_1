@@ -10,16 +10,20 @@ body {
 .logo {
     height: 90px;
     margin-top: 18px;
+    padding-left: 50px;
 }
 
 .header {
     height: 10%;
+    width: auto%;
 }
 
 .header-text {
     color: #fff;
     font-weight: 600;
-    margin-left: 600px;
+    display: inline-flex;
+    padding-top: 25px;
+    padding-left: 550px;
 }
 .header-btn {
     text-decoration: none;
@@ -97,9 +101,10 @@ body {
 .movies {
     color: #fff;
     margin-top: 15px;
+    width: auto;
 }
 
 .movies-posters img {
-    width: 120px;
+    width: 100px;
     margin-right: 5px;
 }
