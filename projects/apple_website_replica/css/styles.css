@@ -1,0 +1,101 @@
+/* Created 20_01_2022 by Anthony Delmeire */
+/* Apple Website replica student project */ 
+
+
+@font-face {
+    font-family: 'SanFrancisco';
+    src: url('../fonts/SF-Pro-Text-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SanFrancisco-light';
+    src: url('../fonts/SF-Pro-Text-Light.otf');
+    font-style: normal;
+    font-weight: 100;
+}
+
+.header_menu {
+    height: 43px;
+    width: auto;
+    background-color: #333333;
+    text-align: center;
+}
+
+.icons_menu {
+    font-size: 15px;
+}
+
+.apple-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: rgb(190, 190, 190);
+    font-family: SanFrancisco-light;
+    font-size: 12px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-left: 17px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: whitesmoke;
+}
+
+.iPhone13-pro {
+    height: auto;
+    width: auto;
+    background: #fbfbfd;
+}
+
+.device-name {
+    font-family: SanFrancisco, sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.device-label {
+    text-align: center;
+    font-family: SanFrancisco, sans-serif;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.device-options a {
+    text-decoration: none;
+    color: #3e95ec;
+    font-family: SanFrancisco, sans-serif;
+    font-size: 20px;
+    padding-right: 35px;
+    display: inline;
+    text-align: center;
+}
+
+.device-options a:hover {
+    text-decoration: underline 2px;
+}
+
+.device-img {
+    padding-top: 25px;
+}
+
+.iPhone13 {
+    border-top: 10px solid #fff;
+    background: #35283c;
+    height: auto;
+    width: auto;
+}

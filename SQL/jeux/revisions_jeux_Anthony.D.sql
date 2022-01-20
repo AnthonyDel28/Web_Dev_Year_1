@@ -112,14 +112,12 @@ GROUP BY nomJ;
 
 SELECT
     idJ AS `id jeu`,
-    nomJ AS `nom du jeu`,
-    COUNT(DISTINCT coulPc) AS `nbre de couleurs`
+    nomJ AS `nom du jeu`
 FROM jeux
 LEFT JOIN positions ON jeux.idJ = positions.idJPos
 LEFT JOIN pieces ON positions.idPcPos = pieces.idPc
 GROUP BY nomJ
-ORDER BY `nbre de couleurs` ASC
-LIMIT 2;
+HAVING COUNT(DISTINCT coulPc) = 1
 
 -- 08
 -- dans le jeu d'�chec (echecs)
