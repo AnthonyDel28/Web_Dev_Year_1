@@ -146,5 +146,46 @@ li a:hover {
 
 .device-img-small {
     padding-top: 75px;
-    padding-bottom: 50px;
+}
+
+.links {
+    background-color: #f5f5f7;
+}
+
+.links_block {
+    padding-top: 15px;
+}
+
+.links_title {
+    color: rgb(82, 81, 81);
+    font-weight: bold;
+}
+
+.links_font {
+    color: #929295;
+    font-size: 11px;
+    font-family: SanFrancisco, sans-serif;
+}
+
+.links_font a {
+    text-decoration: none;
+    color: #777777;
+    font-family: SanFrancisco, sans-serif;
+}
+
+.list a {
+    color: rgb(124, 124, 124);
+    padding: 8px 0 0 0;
+}
+
+.link_contact {
+    color: #929295;
+    font-size: 12px;
+}
+
+.vertical {
+    border-left: 1px solid rgb(131, 131, 131);
+    height: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
