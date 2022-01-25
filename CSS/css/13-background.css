@@ -1,0 +1,51 @@
+/* Created 25-01-2022 */ 
+/* Backgrounds */ 
+
+div {
+    height: 270px;
+}
+
+p {
+    width: 50%;
+}
+
+.color {
+    background-color: brown;
+    color: #fff;
+}
+
+/* Image de fond */
+
+.image {
+    background-image: url(../img/back01.jpg);
+    color: white;
+}
+
+.image-cover {
+    background-image: url('../img/back01.jpg');
+    color: white;
+    background-size: cover;
+}
+
+.image-position {
+    background-image: url('../img/back01.jpg');
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.image-adaptive {
+    background-image: url('../img/maldives.jpg');
+    color: white;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-color: yellowgreen;
+}
+
+.image-large {
+    background-image: url('../img/maldives.jpg');
+    color: white;
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+}
