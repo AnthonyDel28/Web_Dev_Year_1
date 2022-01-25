@@ -1,0 +1,15 @@
+/* Created 25-01-2022 */ 
+
+div {
+    height: 350px;
+    background: url('../img/back01.jpg') no-repeat center;
+    background-size: cover;
+    padding: 15px;
+}
+
+p {
+    width: 40%;
+    background-color: rgba(25, 26, 25, 0.507);
+    color: #fff;
+    padding: 25px;
+}

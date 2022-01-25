@@ -1,0 +1,34 @@
+/* Created 25-01-2022 */ 
+
+p {
+    height: 100px;
+}
+
+/* Dégradés linéaires */
+
+.d1 {
+    background-image: linear-gradient(rgb(4, 144, 209), rgb(85, 12, 202));
+}
+
+.d2 {
+    background-image: linear-gradient(to right,rgb(4, 144, 209), rgb(85, 12, 202));
+}
+
+.d3 {
+    background-image: linear-gradient(to left,rgb(4, 144, 209), rgb(85, 12, 202));
+}
+
+.d4 {
+    background-image: linear-gradient(to bottom right,rgb(4, 144, 209), rgb(85, 12, 202));
+
+}
+
+/* Dégradés radiaux */ 
+
+.d5 {
+    background-image: radial-gradient(rgb(90, 117, 192), rgb(8, 53, 179));
+}
+
+.d6 {
+    background-image: radial-gradient(rgb(90, 117, 192), rgb(8, 53, 179));
+}

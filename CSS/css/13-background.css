@@ -69,3 +69,7 @@ p {
     background-position: bottom left;
     background-size: 150px;
 }
+
+.image-multiple {
+    background: url('../img/woman.png') no-repeat left/30%, url('../img/woman-man.jpg') no-repeat right/30%;
+}
