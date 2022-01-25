@@ -1,0 +1,19 @@
+/* created 2022-01-25 */
+
+fieldset {
+	height: 250px;
+}
+
+img {
+	width: 250px;
+	margin: 1.4rem;
+}
+
+/* Rotation de l'image avec une valeur en degrés.  Si valeur négative le sens de la rotation est inversé */
+.rotate img {
+	transform: rotate(-5deg);
+}
+
+.scale img:hover {
+	transform: scale(110%);
+}
