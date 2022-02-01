@@ -96,6 +96,15 @@ ORDER BY intituleC ASC;
 -- Tables de multiplication            MULT 80             Egretel H.
 -- ----------------------------------------------------------------------------
 
+SELECT 
+    intituleC AS `intitulé du cours`, 
+    cours.idC AS `code du cours`,
+    nbPerC AS `nbre de périodes`,
+    CONCAT(nomPers, ' ', LEFT(prenomPers, 1), '.') AS `nom` 
+FROM cours
+LEFT JOIN profs2016 ON cours.idC = profs2016.idC
+LEFT JOIN personnes ON profs2016.idPers = personnes.idPers;
+
 -- ----------------------------------------------------------------------------
 -- 06
 -- Liste des cours pour lesquels il n'y pas encore de prof
@@ -104,6 +113,14 @@ ORDER BY intituleC ASC;
 -- ----------------------------------------------------------------------------
 -- => 4 cours (ANGL .. STAT)
 -- ----------------------------------------------------------------------------
+
+SELECT
+    intituleC AS `intitulé du cours`, 
+    cours.idC AS `code du cours`,
+    nbPerC AS `nbre de périodes`
+FROM cours
+LEFT JOIN profs2016 ON cours.idC = profs2016.idC
+WHERE NOT EXISTS (SELECT * FROM cours WHERE cours.idC = profs2016.idC);
 
 -- ----------------------------------------------------------------------------
 -- 07
@@ -115,6 +132,16 @@ ORDER BY intituleC ASC;
 -- => 12 lignes (ACA 3, ANGL 0 ... STAT 0, MULT 3)
 -- ----------------------------------------------------------------------------
 
+
+SELECT
+    intituleC AS `intitulé du cours`, 
+    cours.idC AS `code du cours`,
+    nbPerC AS `nbre de périodes`,
+    COUNT(DISTINCT inscr2016.idPers) AS `nbre d'inscrits`
+FROM cours
+LEFT JOIN inscr2016 ON cours.idC = inscr2016.idC
+GROUP BY cours.idC;
+
 -- ----------------------------------------------------------------------------
 -- 08
 -- Liste des "autodidactes" : profs qui suivent leur propre cours
@@ -123,6 +150,18 @@ ORDER BY intituleC ASC;
 -- => 1 Leroy Albert JARD Jardinage
 -- ----------------------------------------------------------------------------
 
+SELECT
+    personnes.idPers,
+    nomPers AS `nom`,
+    prenomPers AS `prenom`,
+    cours.idC,
+    intituleC AS `intitulé`
+FROM personnes
+LEFT JOIN inscr2016 ON personnes.idPers = inscr2016.idPers
+LEFT JOIN cours ON inscr2016.idC = cours.idC
+LEFT JOIN profs2016 ON personnes.idPers = profs2016.idPers
+WHERE profs2016.idPers = inscr2016.idPers AND profs2016.idC = inscr2016.idC;
+
 -- ----------------------------------------------------------------------------
 -- 09
 -- Liste des "regroupements" : m�mes cours organis�s dans plusieurs formations
@@ -130,6 +169,16 @@ ORDER BY intituleC ASC;
 -- ----------------------------------------------------------------------------
 -- => 3 cours (ANGL organis� 2 fois, MULT organis� 2 fois, STAT organis� 2 fois)
 -- ----------------------------------------------------------------------------
+
+
+SELECT
+    cours.idC,
+    intituleC AS `intitulé`,
+    COUNT(coursform.idC) AS `nb de formations regroupées`
+FROM cours
+LEFT JOIN coursform ON cours.idC = coursform.idC
+GROUP BY cours.idC
+HAVING COUNT(coursform.idC) >= 2;
 
 -- ----------------------------------------------------------------------------
 -- 10
@@ -143,6 +192,17 @@ ORDER BY intituleC ASC;
 --  BINFO  Bachelier en informatique 2400      6                  520
 --  FLEUR  Art floral                240       4                  300
 -- ----------------------------------------------------------------------------
+
+SELECT
+    formations.idForm AS `id`,
+    intituleForm AS `intitulé`,
+    nbPerForm AS `nb de périodes`,
+    COUNT(coursform.idC) AS `nbre de cours organisés`,
+    SUM(nbPerC) AS `nbre de périodes organisées`
+FROM formations
+LEFT JOIN coursform ON formations.idForm = coursform.idForm
+LEFT JOIN cours ON coursform.idC = cours.idC
+GROUP BY formations.idForm
 
 -- ----------------------------------------------------------------------------
 -- 11
