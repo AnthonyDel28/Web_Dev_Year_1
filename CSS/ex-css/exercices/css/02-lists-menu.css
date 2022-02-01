@@ -1,0 +1,64 @@
+.ex01 li {
+    list-style-position: inside;
+    list-style-type: upper-roman;
+    margin-bottom: 1.6rem;
+}
+
+.list_box {
+    width: 170px;
+    height: auto;
+    background: rgb(255, 255, 255);
+    border: rgba(85, 84, 84, 0.534) solid 1px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.list_box1 {
+    padding-left: 0%;
+    margin: 0%;
+}
+
+.list_box1 li {
+    font-size: 18px;
+    color: #665b8a;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 5px;
+    border-bottom: 1px solid gray;
+    list-style-type: none;
+}
+
+.list_box1 li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* EXERCICE NAV BAR */ 
+
+.topnav {
+    background-color: rgb(83, 83, 83);
+    text-align: right;
+    height: 80px;
+}
+
+.menu {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
+
+.topnav a {
+        color: #f2f2f2;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 24px;
+        text-decoration: none;
+        font-size: 15px;
+        border-radius: 5px;
+        background-color: tomato;
+        margin-top: 15px;
+}

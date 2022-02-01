@@ -1,0 +1,46 @@
+
+.ex01 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: #6C4007;
+    font-weight: bold;
+    line-height: 1.6rem;
+}
+
+.ex02 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.375rem;
+    color: rgb(71, 71, 71);
+    line-height: 1.875rem;
+    letter-spacing: 0.125rem;
+    word-spacing: 0.188rem;
+    font-style: italic;
+}
+
+.ex03 {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 100%, 59.8%);
+    text-transform: uppercase;
+    float: right; /* !!! Mieux d'utiliser text align */ 
+    font-weight: 300;
+}
+
+.ex04 {
+    font-family: sans-serif;
+    font-variant-caps: small-caps;
+    box-sizing: border-box;
+    width: 30%;
+    font-size: 2rem;
+    word-spacing: 1rem;
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.ex05 a {
+    color: orange;
+    font-size: 2.4rem;
+    text-decoration: none;
+}
