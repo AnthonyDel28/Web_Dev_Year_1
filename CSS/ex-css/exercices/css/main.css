@@ -1,0 +1,24 @@
+body {
+    margin: 2% 5%;
+    font-family: sans-serif;
+}
+
+fieldset {
+    margin-bottom: 1.6rem;
+    border: 1px solid #999;
+    border-radius: 6px;
+}
+
+fieldset p,
+fieldset h1 {
+    margin: 0 10%;
+}
+
+legend {
+    padding: 0 5px;
+    font-size: 1.2rem;
+}
+
+h2 {
+    color: #777;
+}
