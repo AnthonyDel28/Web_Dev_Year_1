@@ -235,3 +235,5 @@ UPDATE cours
 LEFT JOIN coursform ON cours.idC = coursform.idC
 SET nbPerC = nbPerC * 1.10
 WHERE coursform.idForm = 'FLEUR';
+
+HELLO
