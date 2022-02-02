@@ -142,7 +142,9 @@ SELECT
     COUNT(DISTINCT inscr2016.idPers) AS `nbre d'inscrits`
 FROM cours
 LEFT JOIN inscr2016 ON cours.idC = inscr2016.idC
-GROUP BY cours.idC;
+GROUP BY cours.idC
+ORDER BY intituleC ASC;
+
 
 -- ----------------------------------------------------------------------------
 -- 08
