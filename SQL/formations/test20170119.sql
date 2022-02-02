@@ -103,7 +103,8 @@ SELECT
     CONCAT(nomPers, ' ', LEFT(prenomPers, 1), '.') AS `nom` 
 FROM cours
 LEFT JOIN profs2016 ON cours.idC = profs2016.idC
-LEFT JOIN personnes ON profs2016.idPers = personnes.idPers;
+LEFT JOIN personnes ON profs2016.idPers = personnes.idPers
+ORDER BY intituleC ASC;
 
 -- ----------------------------------------------------------------------------
 -- 06
@@ -120,7 +121,8 @@ SELECT
     nbPerC AS `nbre de périodes`
 FROM cours
 LEFT JOIN profs2016 ON cours.idC = profs2016.idC
-WHERE NOT EXISTS (SELECT * FROM cours WHERE cours.idC = profs2016.idC);
+WHERE NOT EXISTS (SELECT * FROM cours WHERE cours.idC = profs2016.idC)
+ORDER BY intituleC;
 
 -- ----------------------------------------------------------------------------
 -- 07
@@ -202,17 +204,24 @@ SELECT
 FROM formations
 LEFT JOIN coursform ON formations.idForm = coursform.idForm
 LEFT JOIN cours ON coursform.idC = cours.idC
-GROUP BY formations.idForm
+GROUP BY formations.idForm;
 
 -- ----------------------------------------------------------------------------
 -- 11
 -- ajouter une nouvelle personne: vous m�me (votre nom et pr�nom)
 -- ----------------------------------------------------------------------------
 
+INSERT INTO personnes(nomPers, prenomPers)
+VALUES ('Delmeire', 'Anthony');
+
 -- ----------------------------------------------------------------------------
 -- 12
 -- diminuer de 100 p�riodes le total de p�riodes du bac en info (BINFO)
 -- ----------------------------------------------------------------------------
+
+UPDATE formations
+SET nbPerForm = nbPerForm - 100
+WHERE idForm = 'BINFO';
 
 -- ----------------------------------------------------------------------------
 -- 13
@@ -220,3 +229,7 @@ GROUP BY formations.idForm
 --    de tous les cours organis�s en art floral (FLEUR)
 -- ----------------------------------------------------------------------------
   
+UPDATE cours
+LEFT JOIN coursform ON cours.idC = coursform.idC
+SET nbPerC = nbPerC * 1.10
+WHERE coursform.idForm = 'FLEUR';
