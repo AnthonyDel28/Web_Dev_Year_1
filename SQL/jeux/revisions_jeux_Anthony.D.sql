@@ -56,13 +56,13 @@ ORDER BY `nbre de cases` DESC;
 -- ==> othello ... green, solx ... red
 
 SELECT
-    idJ AS `id jeu`,
-    nomJ AS `nom du jeu`,
-    idPlat AS `id plateau`,
-    descPlat AS `description plateau`,
-    coul1Plat AS `couleur`
+    idJ, 
+    nomJ
+    idPlat,
+    descPlat,
+    couleur1Plat
 FROM jeux
-LEFT JOIN plateaux ON jeux.plateauJ = plateaux.idPlat
+LEFT JOIN plateaux ON jeux.plateauJ = plateaux..idPlat
 WHERE coul2Plat IS NULL
 ORDER BY nomJ ASC;
 
@@ -103,7 +103,7 @@ FROM jeux
 LEFT JOIN plateaux ON jeux.plateauJ = plateaux.idPlat
 LEFT JOIN positions ON jeux.idJ = positions.idJPos
 LEFT JOIN pieces ON positions.idPcPos = pieces.idPc
-GROUP BY nomJ;
+GROUP BY idJ;
 
 -- 07
 -- liste des jeux qui se jouent avec des pi�ces d'une seule couleur
@@ -116,8 +116,8 @@ SELECT
 FROM jeux
 LEFT JOIN positions ON jeux.idJ = positions.idJPos
 LEFT JOIN pieces ON positions.idPcPos = pieces.idPc
-GROUP BY nomJ
-HAVING COUNT(DISTINCT coulPc) = 1
+GROUP BY idJ
+
 
 -- 08
 -- dans le jeu d'�chec (echecs)
