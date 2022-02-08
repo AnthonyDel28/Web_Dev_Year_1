@@ -1,7 +1,7 @@
 .ex01 {
     background-image: url('../images/back01-2.jpg');
     height: 450px;
-    width: 1500px;
+    width: 90%;
     background-position: bottom;
     background-size: cover;
     margin: 0 auto;
@@ -17,7 +17,6 @@
     position: relative;
     top: 50%;
     left: 50%;
-    margin-right: -50%;
     transform: translate(-50%, -50%);
 }
 
@@ -25,3 +24,36 @@
     font-weight: lighter;
 }
 
+/* Alternative  
+
+body {
+	margin: 1% 10%;
+	font-family: sans-serif;
+	color: #333;
+}
+
+.ex01 {
+	height: 600px;
+	padding-top: 10%;
+	background-image: url('../images/back01-2.jpg');
+	background-position: bottom;
+}
+
+.box01 {
+	width: 40%;
+	min-height: 150px;
+	background-color: #ffffff68;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+.box01 h2 {
+    font-weight: normal;
+    font-size: 2.2rem
+}
+
+.box01 p {
+    font-size: 1.4rem
+}
+*/
