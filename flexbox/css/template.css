@@ -1,0 +1,35 @@
+/* Page model */
+
+body {
+    margin: 2% 15%;
+    font-family: sans-serif;
+    color: #333;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+legend {
+    padding: 0 7px;
+    font-size: 20px;
+    color: #555;
+}
+
+span {
+    text-decoration: underline;
+}
+
+q {
+    font-style: italic;
+}
+
+/* classe qui permet de cibler les balises pour lesquelles ont applique l'attribut "class" */
+.icons {
+    list-style-type: none; /* retirer les puces par défaut */
+}
+img {
+    width: 900px;
+}
