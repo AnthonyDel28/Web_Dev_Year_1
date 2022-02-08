@@ -25,3 +25,49 @@ a:hover {
     background-color: orchid;
     color: palegreen;
 }
+
+img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.img01 {
+    transition: all 1s;
+
+}
+
+.img01:hover {
+    border-radius: 180px;
+}
+
+.img02 {
+    transition: all 1s;
+}
+
+.img02:hover {
+    transform: scale(1.3);
+}
+
+.img03 {
+    transition: all 1s;
+}
+
+.img03:hover {
+    transform: rotate(360deg);
+}
+
+.img04 {
+    transition: all 1s;
+}
+
+.img04:hover {
+    filter: brightness(250%);
+}
+
+.img05 {
+    transition: all 1s;
+}
+
+.img05:hover {
+    border: 4px solid greenyellow;
+}
