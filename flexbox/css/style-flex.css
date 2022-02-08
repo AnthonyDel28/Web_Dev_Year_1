@@ -1,0 +1,27 @@
+/* General CSS flex 22-02-2022 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.item01 {
+	background-color: #ff5722;
+}
+
+.item02 {
+	background-color: #607d8d;
+}
+
+.item03 {
+	background-color: #8bc34a;
+}
+
+.item04 {
+	background-color: #2196f3;
+}
+
+.container div {
+	margin: 0.8rem;
+	padding: 0.8rem;
+}

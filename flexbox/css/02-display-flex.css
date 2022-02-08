@@ -1,0 +1,11 @@
+
+/* La valeur flex de lapropriété display définit le contexte d'affichage flexbox
+La div parente devient un flex container et les éléments enfantsdeviennent des flex items (éléments flexible) */
+
+
+/* flex-direction définit l'alignement sur l'axe principal (par défaut row).  Autres valeurs: rwo-reverse, column et column-reverse */
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
