@@ -1,0 +1,33 @@
+/* Created 09-02-2022 */ 
+/* Student Project by Anthony D. (Game of Thrones Series Hub) */
+
+body {
+    background-color: rgb(44, 46, 45);
+}
+
+.logo {
+    width: 350px;
+    float: left;
+}
+
+.nav-bar {
+    width: 80%;
+    height: 100px;
+    background-color: rgb(30, 32, 32);
+    margin: 0 auto;
+}
+
+.nav-bar li {
+    text-align: right;
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    padding-right: 50px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
