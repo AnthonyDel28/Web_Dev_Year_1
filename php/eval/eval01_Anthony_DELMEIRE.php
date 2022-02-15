@@ -18,9 +18,7 @@ Si la variable n'est pas vide, modifiez son type en nombre à décimales
 
 $var = 12;
 
-if(empty($var))
 
-echo '<hr>';
 
 /////// EXERCICE 03 ///////
 /* 
@@ -32,7 +30,6 @@ $val01 = '12';
 $val02 = 12;
 
 
-echo '<hr>';
 
 /////// EXERCICE 04 ///////
 /*
@@ -69,10 +66,3 @@ En sortant du PHP et en ulisant le HTML
 5.6) Affichez une nouvelle fois le tableau mais uniquement pour les étudiants dont le pourcentage est compris entre 80 et 90%.  Le nouvel étudiant doit apparaître.
 */
 
-$tab = ['fraise' => 15, 'pomme' => 12];
-print_r($tab);
-
-$tab['radis'] = 13;
-foreach($tab as $name => $qtt){
-	print $name.' '.$qtt.'<br>';
-}
