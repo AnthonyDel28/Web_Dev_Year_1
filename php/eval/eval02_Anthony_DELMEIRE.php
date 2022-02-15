@@ -13,22 +13,33 @@ Si l'extension ne correspond pas à un pays du menu, on affiche ... est une exte
 
  $tab = ['Belgique' => 'be', 'Chine' => 'cn', 'Egypte' => 'eg', 'Allemagne' => 'de', 'Kenya' => 'ke', 'France' => 'fr'];
 
-foreach($tab as $key => $value){
-	print "<a href='?iso=$iso'>$names</a> ";
+foreach($tab as $country => $code)
+	print "<a href='?page=$code'> $country </a>";
+
+if(!isset($_GET['page'])){
+	$_GET['page'] = 'home';
 }
 
-if(!isset($_GET['iso'])){
-	$_GET['iso'] = 'home';
-}
+if($_GET['page'] == be || $_GET['page'] == fr || $_GET['page'] == de)
+	print '<h1>'.$_GET['page'].' est une extension européenne<br>';
+elseif($_GET['page'] == eg || $_GET['page'] == ke)
+	print '<h1>'.$_GET['page'].' est une extension africaine<br>';
+elseif($_GET['page'] == cn)
+	print '<h1>'.$_GET['page'].' est une extension asiatique<br>';
+elseif($_GET['page'] == home)
+	print '<h1>Bienvenue sur notre site!';
+else
+	print "<h1>".$_GET['page']." n'est pas une extension répertoriée";
+?>
 
-if($_GET['iso'] == 'be' || $_GET['iso'] == 'fr' || $_GET['iso'] == 'de'){
-	print '<h1>'.$_GET['iso'].' est une extension européenne<br>';
-}elseif($_GET['iso'] == 'cn' ){
-	print '<h1>'.$_GET['iso'].' est une extension asiatique<br>';
-}elseif($_GET['iso'] == 'ke' || $_GET['iso'] == 'eg'){
-	print '<h1>'.$_GET['iso'].' est une extension africaine<br>';
-}elseif($_GET['iso'] == 'home'){
-	print '<h1>Sélectionnez votre pays!<br>';
-}else{
-	print '<h1>'.$_GET['iso'].' est une extension non répertoriée!';
-}
+
+
+
+<!DOCTYPE html>
+<html>
+	<style>
+		body {
+			background-color: #000000;
+			color: #fff;
+		}
+	</style>

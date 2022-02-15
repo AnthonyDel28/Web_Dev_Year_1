@@ -26,7 +26,7 @@ Si l'extension ne correspond pas à un pays du menu, on affiche ... est une exte
  }elseif($_GET['page'] == 'cn'){
 	 print '<h1>'.$_GET['page'].' est une extension asiatique<br>';
  }elseif($_GET['page'] == 'ke' || $_GET['page'] == 'eg'){
-	 print '<h1>'.$_GET['page'].' est une extension asiatique<br>';
+	 print '<h1>'.$_GET['page'].' est une extension africaine<br>';
  }elseif($_GET['page'] == 'home'){
 	 print '<h1>Sélectionnez votre pays!';
  }else{
