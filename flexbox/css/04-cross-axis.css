@@ -1,0 +1,9 @@
+/* La propriété cross-axis aligne les items sur l'axe secondaire:
+flex-start, flex-end, center et stretch */
+
+.container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

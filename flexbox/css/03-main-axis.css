@@ -1,13 +1,16 @@
 /* La propriété justify-content permet de définir la position des flex-items sur le main-axis */
 
+/* valeurs: space-around, space-between, space-envenly, start, end... 
+*/
+
 .container-team {
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-between;	
 }
 
 .container-team div {
 	width: 20%;
-	margin: 0; /* Annuler les marges */
+	margin: 0; /* Annuler les marges de style-flex.css*/
 }
 
 .container-about {

@@ -1,0 +1,23 @@
+/* Created 22-02-2022 */
+
+/* La propriété align-self permet de positionner un item sélectionné 
+    La propriété order permet de modifier l'ordre des items */
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container div {
+    width: 20%;
+    height: 100px;
+}
+
+.item02 {
+    align-self: flex-start;
+}
+
+.item03 {
+    order: 4;
+}
