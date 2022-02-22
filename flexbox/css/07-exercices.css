@@ -1,0 +1,113 @@
+/* Created 22-02-2022 */
+
+.container {
+    background-color: #999;
+}
+
+.container div {
+    width: 15%;
+    line-height: 50px;
+    font-size: 1.6rem;
+    color: #fff;
+    text-align: center;
+}
+
+.item01 {
+    background-color: #cfd8dc;
+}
+
+.item02 {
+    background-color: #ff5722;
+}
+
+.item03 {
+    background-color: #8bc34a;
+}
+
+.item04 {
+    background-color: #607d8d;
+}
+
+/* EXERCICE 01 */
+
+.ex01 {
+   display: flex;
+   justify-content: space-between;
+}
+
+/* EXERCICE 02 */
+
+
+.ex02 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+/* EXERCICE 03 */
+
+.ex03 {
+    display: flex;
+}
+
+.ex03 .item02 {
+    width: 50%;
+    order: 4;
+    flex-grow: 1;
+}
+
+/* EXERCICE 04 */
+
+
+.ex04 {
+    display: flex;
+    height: 100px;
+}
+
+.ex04 div {
+    height: 50%;
+}
+
+.ex04 .item03 {
+    align-self: flex-end;
+}
+
+/* EXERCICE 05 */
+
+.ex05 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.ex05 .item01 {
+    height: 50px;
+}
+
+/* EXERCICE 06 */
+
+.ex06 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* EXERCICE 07 */
+
+.ex07 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ex07 >.item02 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #84f700;
+}
+
+.ex07 .item02 .item02 {
+    background-color: #607d8d;
+
+}

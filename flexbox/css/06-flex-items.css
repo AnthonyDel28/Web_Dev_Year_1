@@ -6,7 +6,8 @@
 .container {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 400px;
+    margin-bottom: 2rem;
 }
 
 .container div {
@@ -15,9 +16,24 @@
 }
 
 .item02 {
-    align-self: flex-start;
+    align-self: flex-end;
 }
 
 .item03 {
     order: 4;
+}
+/* La propriété flew-grow permet à un item de s'étirer en fonction de l'espace 
+disponible */
+
+.container-grow {
+    display: flex;
+}
+
+.container-grow div {
+    height: 100px;
+}
+
+.container-grow .item02,
+.container-grow .item01 {
+    flex-grow: 1;
 }
