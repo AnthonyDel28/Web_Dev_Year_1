@@ -9,3 +9,50 @@ $courses = ['HTML' => 80, 'CSS' => 60, 'PHP' => 125, 'JS' => 100, 'Symfony' => 1
 // 5. A l'aide d'une boucle, affichez les cours dont les périodes sont comprises entre 100 et 120
 // 6. Affichez la moyenne des périodes et arrondissez le résultat
 // 7. Convertissez le tableau associatif en variables et ajoutez 20 périodes au cours HTML.  Affichez le nouveau résultat.
+
+// 1 ------------------------------------------------------------------------------------------------------------
+print_r($courses);
+print "<br>";
+$courses['Newtork'] = 40;
+print_r($courses);
+print "<hr>";
+
+// 2 ------------------------------------------------------------------------------------------------------------
+
+foreach($courses as $name => $value){
+    if($name == 'CSS'){
+        print "Le cours de ".$name." est de ".$value." périodes.";
+    }
+} print "<hr>";
+
+// 3 ------------------------------------------------------------------------------------------------------------
+
+print array_key_exists('Symfony', $courses)."<hr>";
+
+// 4 ------------------------------------------------------------------------------------------------------------
+asort($courses);
+foreach($courses as $name => $value){
+    print $name.' : '.$value.'<br>';
+} print "<hr>";
+
+// 5 -------------------------------------------------------------------------------------------------------------
+
+foreach($courses as $name => $value){
+    if($value >= 100 && $value <= 120){
+        print $name." : ".$value."<br>";
+    }
+} print "<hr>";
+
+// 6 -------------------------------------------------------------------------------------------------------------
+
+print round(array_sum($courses) / count($courses));
+print "<hr>";
+
+// 7 -------------------------------------------------------------------------------------------------------------
+
+print_r($courses);
+print "<br>";
+extract($courses, EXTR_PREFIX_SAME, "");
+$HTML = $HTML + 20;
+print "Le cours d'HTML a désormais ".$HTML." périodes.";
+
