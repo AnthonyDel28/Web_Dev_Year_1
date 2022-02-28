@@ -61,6 +61,9 @@
     align-items: center;
 }
 
+
+
+
 .header-title {
     text-align: center;
 }
@@ -120,6 +123,12 @@
     background-image: url('../img/about.jpg');
     background-size: cover;
     border-radius: 5px;
+    transition: 0.5s all ease-in-out;
+}
+
+.about-right:hover {
+    transform: scale(1.1);
+    transform .5s ease;
 }
 
 .team {
