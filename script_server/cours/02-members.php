@@ -35,6 +35,7 @@ include('./sources/members-array.php');
         <tr>
             <?php 
                     $index = 1;
+                    asort($members);
                         foreach($members as $tab){
                                 if($index % 2 == 1)
                                     print "<tr class='line1'>";
