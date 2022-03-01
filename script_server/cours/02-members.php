@@ -24,7 +24,7 @@ include('./sources/members-array.php');
                     {
                         foreach($tab as $key => $value)
                         {
-                            echo "<th>".ucfirst($key)."</th>";
+                            print "<th>".ucfirst($key)."</th>";
                         }
                         break;
                     }   
@@ -41,7 +41,7 @@ include('./sources/members-array.php');
                                     print "<tr class='line_even'>";
                                 else
                                     print "<tr class='line_odd'>";
-                                print "<td>" .$index. "</td>";
+                                    print "<td>" .$index. "</td>";
                                 foreach($tab as $key => $value){
                                     print "<td>" .$value . "</td>";
                                 }
@@ -83,7 +83,7 @@ table {
     margin: 25px 0;
     font-size: 11px;
     font-family: sans-serif;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
     margin-left: auto;
     margin-right: auto;
 }
