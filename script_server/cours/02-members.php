@@ -12,13 +12,13 @@
 include('./sources/members-array.php');
 // require('./sources/members-array.php');
 
-
 ?>
 
-<table>
-    <thead>
-        <tr>
-            <?php 
+<body>
+    <table>
+        <thead>
+            <tr>
+                <?php 
                     print "<th>N.</th>";
                     foreach($members as $tab)
                     {
@@ -28,17 +28,19 @@ include('./sources/members-array.php');
                         }
                         break;
                     }   
-            ?>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <?php 
+                ?>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <?php 
                     $index = 1;
                     asort($members);
                         foreach($members as $tab){
                                 if($index % 2 == 1)
-                                    print "<tr class='line1'>";
+                                    print "<tr class='line_even'>";
+                                else
+                                    print "<tr class='line_odd'>";
                                 print "<td>" .$index. "</td>";
                                 foreach($tab as $key => $value){
                                     print "<td>" .$value . "</td>";
@@ -46,29 +48,45 @@ include('./sources/members-array.php');
                                 $index++;
                             print "</tr>";
                         }
-            ?>
-        </tr>
-    </tbody>
-</table>
+                ?>
+            </tr>
+        </tbody>
+    </table>
+</body>
 
 <style>
-table,
+
+
+
 td {
     border: 1px solid #333;
+    padding: 5px 5px;
 }
 
 th {
     background-color: #333;
     color: #fff;
+    padding: 5px 5px;
 }
 
-.line1 {
-    background-color: #d5445d;
+.line_even {
+    background-color: #CACBCB;
 }
+
+.line_odd {
+    background-color: #fff;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 11px;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 </style>
-
-
-
-
-
