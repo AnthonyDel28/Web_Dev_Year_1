@@ -1,0 +1,114 @@
+/*
+                    ______                 __      
+   ____ ___  __  __/ ____/______  ______  / /_____ 
+  / __ `__ \/ / / / /   / ___/ / / / __ \/ __/ __ \
+ / / / / / / /_/ / /___/ /  / /_/ / /_/ / /_/ /_/ /
+/_/ /_/ /_/\__, /\____/_/   \__, / .___/\__/\____/ 
+          /____/           /____/_/      
+
+          Student project by Anthony.D
+          Project starded on 15_03_2022
+*/
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(13,13,15,0.8015581232492998) 0%, rgba(10,11,13,1) 83%, rgba(9,10,13,1) 100%), url('../img/wallpaper.jpg'), no-repeat;
+    background-size: cover;
+    background-color: #0a0b0d;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    background-color: rgba(37, 37, 37, 0.514);
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    width: 250px;
+    margin-top: 10px;
+}
+
+
+.live-charts {
+    width: 30%;
+    margin-top: 15px;
+}
+
+.nav-menu {
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    margin-right: 25px;
+}
+
+.nav-menu ul li a:hover {
+    text-decoration: none;
+    color: rgb(4, 152, 252);
+    font-family: 'Inconsolata', monospace;
+    margin-right: 25px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header-zone {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 25px;
+}
+
+/* .head-text {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-top: 150px;
+    margin-right: 50px;
+    width: 25%;
+  }
+  
+  .typing-demo {
+    width: 35ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 25px;
+    color: white;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+*/
+
