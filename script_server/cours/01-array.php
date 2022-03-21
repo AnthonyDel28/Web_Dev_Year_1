@@ -11,6 +11,7 @@ $courses = ['HTML' => 80, 'CSS' => 60, 'PHP' => 125, 'JS' => 100, 'Symfony' => 1
 // 7. Convertissez le tableau associatif en variables et ajoutez 20 périodes au cours HTML.  Affichez le nouveau résultat.
 
 // 1 ------------------------------------------------------------------------------------------------------------
+
 print_r($courses);
 print "<br>";
 $courses['Newtork'] = 40;
@@ -30,6 +31,7 @@ foreach($courses as $name => $value){
 print array_key_exists('Symfony', $courses)."<hr>";
 
 // 4 ------------------------------------------------------------------------------------------------------------
+
 asort($courses);
 foreach($courses as $name => $value){
     print $name.' : '.$value.'<br>';
@@ -56,3 +58,9 @@ extract($courses, EXTR_PREFIX_SAME, "");
 $HTML = $HTML + 20;
 print "Le cours d'HTML a désormais ".$HTML." périodes.";
 
+/* 
+$strings = extract($courses);
+// var_dump($strings);
+echo 'HTML:'. $HTML.'<br>';
+echo 'HTML:'.$HTML + 20;
+*/
