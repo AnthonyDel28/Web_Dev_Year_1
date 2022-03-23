@@ -7,21 +7,21 @@
     <title>Form - Post</title>
 </head>
 <body>
-
 <?php
-$jobs = [];
+$jobs = ['Webdeveloper'];
+// $_POST['name'];
 ?>
-
 <form action="04-form-processing.php" method="post">
     <label for="name">FirstName & Surname</label>
     <input type="text" id="name" name="name"><br>
     <label for="job">Job</label>
     <select name="job" id="job">
-    <!-- Liste déroulante dynamique à partir du [] $jobs !-->
+    <!-- Liste déroulante dynamique à partir de tableau $jobs -->
     </select>
+    <br>
     <label for="birth">Year of birth</label>
     <select name="birth" id="birth">
-        <!-- Liste déroulante dynamique avec des valeurs de 1950 à cette année !-->
+    <!-- Liste déroulante dynamique avec des valeurs de 1950 à cette année -->
     </select>
     <br>
     <input type="submit">
