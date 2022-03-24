@@ -1,10 +1,16 @@
-<?php
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jouer</title>
+</head>
+<body>
+</body>
+</html>
 
-
-$number = mt_rand(0, 100);
-print "Votre valeur alétaoire entre 0 et 100 est: ".$number."<br>";
-
-?>
-
-<a href="?view=play">Rejouer</a>
-
+    <?php
+        require __DIR__ .'/play.php';
+    ?>
