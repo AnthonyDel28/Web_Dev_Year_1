@@ -31,7 +31,8 @@ body {
 
 .box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 100px;
     width: 900px;
     height: 600px;
     background-color: rgba(0, 0, 0, 0.596);
