@@ -6,4 +6,3 @@ if(empty($_POST['name']) || empty($_POST['job']) || empty($_POST['birth'])){
 } else {
     print "Les données seront enregistrées dans la base de données!";
 }
-
