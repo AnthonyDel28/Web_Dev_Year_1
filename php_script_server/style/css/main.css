@@ -33,16 +33,17 @@ body {
     display: flex;
     justify-content: space-evenly;
     gap: 100px;
-    width: 900px;
-    height: 600px;
+    width: 700px;
+    height: 500px;
     background-color: rgba(0, 0, 0, 0.596);
+    border: 1px solid rgb(0, 195, 255);
 }
 
 .left-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     margin-left: 100px;
 }
 
@@ -55,7 +56,7 @@ body {
 .left-menu button a {
     color: white;
     font-family: 'Anton', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .character {
@@ -64,6 +65,43 @@ body {
 
 .character img {
     width: 95%;
-    height: 95%;
-    margin-top: 10px;
+    height: 80%;
+    margin-top: 50px;
+    margin-right: 75px;
+}
+
+.idea {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 250px;
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 0.5s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+    text-align: center;
+  }
+
+.footer p {
+    color: white;
+    margin-bottom: 5px;
 }
