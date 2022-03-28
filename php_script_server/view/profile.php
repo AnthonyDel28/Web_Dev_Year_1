@@ -15,9 +15,10 @@
         <html>
         <div class="profile-box">
             <div class="profile-field">
-                <?php
-                    print "<p class='profile-title'>You need to be connected ! </p>";
-                ?>
+            <p class='profile-title'>You need to be connected ! </p>
+            <button>
+                <a href="index.php?view=form/f_login" class="connect-button">Connect</a>
+            </button>
             </div>
         </div>
         <?php

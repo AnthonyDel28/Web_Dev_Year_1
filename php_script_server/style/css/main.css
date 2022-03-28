@@ -296,6 +296,27 @@ h3 {
     font-family: 'Anton', sans-serif;
 }
 
+.profile-field {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.profile-field button {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 162, 255);
+}
+
+.profile-field button a {
+    text-decoration: none;
+    color: white;
+}
+
 /*------------------------------------------Sign Up Page -------------------*/
 
 .signup-box {
@@ -335,3 +356,4 @@ h3 {
     color: rgb(0, 162, 255);
     border: 1px solid rgb(0, 162, 255);
 }
+
