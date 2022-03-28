@@ -40,6 +40,11 @@ body {
     border: 1px solid rgb(0, 153, 255);
 }
 
+.welcome-message {
+    color: white;
+    font-size: 25px;
+}
+
 .left-menu {
     display: flex;
     flex-direction: column;
@@ -158,13 +163,19 @@ h3 {
 }
 
 .login-form form button {
-    background-color: rgba(211, 211, 211, 0.938);
-    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 162, 255);
 }
 
 .login-form form button:hover {
-    background-color: rgba(0, 0, 0, 0.548);
-    color: rgb(0, 153, 255);
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: rgb(0, 162, 255);
+    border: 1px solid rgb(0, 162, 255);
 }
 
 .no-account {
@@ -229,4 +240,98 @@ h3 {
     color: white;
     border-radius: 5px;
     border: 1px solid rgb(0, 183, 255);
+}
+
+
+/*------------------------ LOGOUT FORM --------------*/
+
+.logout-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.logout-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-title {
+    color: rgb(0, 162, 255);
+    font-size: 80px;
+    font-family: 'Anton', sans-serif;
+}
+
+.logout-form input {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 162, 255);
+}
+
+.logout-form input:hover {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: rgb(0, 162, 255);
+    border: 1px solid rgb(0, 162, 255);
+}
+
+/*------------------------------------------ Profile page --------------------------------*/
+
+.profile-title {
+    color: rgb(0, 162, 255);
+    font-size: 50px;
+    font-family: 'Anton', sans-serif;
+    margin-top: 50px;
+}
+
+.profile-sub-title {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+}
+
+/*------------------------------------------Sign Up Page -------------------*/
+
+.signup-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form label {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 5px;
+}
+
+.signup-form input {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 162, 255);
+    margin-bottom: 10px;
+}
+
+.signup-form input:hover {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: rgb(0, 162, 255);
+    border: 1px solid rgb(0, 162, 255);
 }

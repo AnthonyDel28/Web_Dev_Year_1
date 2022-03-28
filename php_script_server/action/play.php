@@ -1,6 +1,3 @@
-<?php 
-session_abort();
-?>
 
 <div class="result-box">
     <div class="result">
