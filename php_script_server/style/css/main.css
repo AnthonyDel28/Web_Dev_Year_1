@@ -129,16 +129,104 @@ body {
     justify-content: center;
 }
 
+h3 {
+    position: absolute;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    margin-top: 25px;
+}
+
 .login-form, 
 .login-form form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .login-form form label {
     color: white;
-    font-size: 35px;
-    font-family: 'Anton', sans-serif;;
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    margin-top: 10px;
+}
+
+.login-form form input {
+    margin-bottom: 25px;
+    border: 2px solid rgb(0, 153, 255);
+}
+
+.login-form form button {
+    background-color: rgba(211, 211, 211, 0.938);
+    color: rgb(0, 0, 0);
+}
+
+.login-form form button:hover {
+    background-color: rgba(0, 0, 0, 0.548);
+    color: rgb(0, 153, 255);
+}
+
+.no-account {
+    margin-top: 10px;
+}
+
+.no-account-text {
+    color: white;
+}
+
+/* ---------------------------- PLAY FORM ---------------------------------*/
+
+.play-form {
+    display: flex;
+    justify-content: center;
+}
+
+.play-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.play-form form label {
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+    color: rgb(0, 195, 255);
+}
+
+
+/*---------------------------------Result ----------------------------------*/
+
+.result-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.result {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.result-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+.number {
+    color: rgb(0, 162, 255);
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.replay {
+    text-decoration: none;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 183, 255);
 }

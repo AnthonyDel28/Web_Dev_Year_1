@@ -10,7 +10,7 @@
             <a href="index.php?view=view/play" class="nav-link">Play</a>
         </button>
         <button>
-            <a href="index.php?view=form/login" class="nav-link">Login</a>
+            <a href="index.php?view=form/f_login" class="nav-link">Login</a>
         </button>
     </div>
     <div class="box">
