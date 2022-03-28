@@ -31,12 +31,13 @@ body {
 
 .box {
     display: flex;
-    justify-content: space-evenly;
-    gap: 100px;
+    justify-content: center;
     width: 700px;
     height: 500px;
-    background-color: rgba(0, 0, 0, 0.596);
-    border: 1px solid rgb(0, 195, 255);
+    background-color: rgba(0, 0, 0, 0.76);
+    background-image: url('/IEPSCF/php_script_server/style/img/numbers_background.png');
+    background-size: cover;
+    border: 1px solid rgb(0, 153, 255);
 }
 
 .left-menu {
@@ -44,13 +45,13 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-    margin-left: 100px;
+    margin-right: 50px;
 }
 
 .left-menu button {
     background-color: rgba(0, 0, 0, 0.37);
     border-radius: 5px;
-    border: 1px solid rgb(0, 110, 255);
+    border: 1px solid rgb(0, 153, 255);
 }
 
 .left-menu button a {
@@ -64,10 +65,10 @@ body {
 }
 
 .character img {
-    width: 95%;
+    width: 120%;
     height: 80%;
     margin-top: 50px;
-    margin-right: 75px;
+    margin-left: 250px;
 }
 
 .idea {
@@ -75,7 +76,8 @@ body {
     height: 80px;
     position: absolute;
     margin-top: 80px;
-    margin-left: 250px;
+    margin-left: 130px;
+    filter: drop-shadow(0 -3mm 2mm rgb(255, 208, 0));
     -webkit-animation: action 1s infinite  alternate;
     animation: action 0.5s infinite  alternate;
 }
@@ -88,6 +90,18 @@ body {
 @keyframes action {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
+}
+
+.bubble {
+    position: absolute;
+    margin-right: 300px;
+    margin-top: 35px;
+}
+
+.bubble img {
+    width: 150px;
+    height: 150px;
+
 }
 
 
@@ -104,4 +118,28 @@ body {
 .footer p {
     color: white;
     margin-bottom: 5px;
+}
+
+/* ------------------------------------------------------------------- SPECIFIC PAGES --------------------------------------------------------------------------------*/
+
+/* -------------------------------------------------------------------- LOGIN FORM -----------------------------------------------------------------------------------*/
+
+.login-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.login-form, 
+.login-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form form label {
+    color: white;
+    font-size: 35px;
+    font-family: 'Anton', sans-serif;;
 }
