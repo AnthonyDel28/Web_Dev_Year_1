@@ -6,7 +6,7 @@ define("password", "root");
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'guessthenumber');
 define('DB_USER', 'root');
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'root');
 
 define('APP_MODE', 'session');
 
