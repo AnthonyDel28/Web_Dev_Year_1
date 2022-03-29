@@ -2,7 +2,7 @@
 /**
  *  Script de déconnection
  */
-
+session_destroy();
 // On vérifie si l'utilisateur est connecté. Pour ce faire, il convient de vérifier si la donnée correspondante existe en session
 if (!empty($_SESSION['username'])) {
     // Si c'est le cas, on supprime les valeurs de session
