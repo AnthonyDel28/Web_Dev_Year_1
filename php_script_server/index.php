@@ -10,11 +10,16 @@ require_once __DIR__ . '/lib/output.php';
 // Un fichier comprenant les fonctions liées à l'utilisateur [function + pdo]
 require_once __DIR__ . '/lib/user.php';
 
+if (!defined('APP_MODE')) {
+    $_GET['view'] = 'view/config';
+}
+
 
 $view = '';
 if (isset($_GET['view'])) {
     $view = $_GET['view'];
 }
+
 
 
 $dbh = connect();

@@ -357,3 +357,47 @@ h3 {
     border: 1px solid rgb(0, 162, 255);
 }
 
+/*-------------------------------------- ERROR PAGE --------------------------------------*/
+
+.error-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error-field a {
+    text-decoration: none;
+}
+
+.error-title {
+    display: flex;
+    font-size: 50px;
+    color: #e74c3c;
+    font-family: 'Anton', sans-serif;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+    text-align: center;
+}
+
+.error-text {
+    display: flex;
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.error-button {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 162, 255);
+    margin-bottom: 10px;
+}

@@ -1,9 +1,17 @@
 <?php
+/**
+ *  Librairie d'affichage
+ */
 
-// ce script contiendra les fonctions d'affichage
+// ce script contiendra les fonctions d'affichage [function]
 
-
-
+/**
+ * @param string $link
+ * @param string $caption
+ * @param string $class
+ * @param string $target
+ * @return string
+ */
 function signUpLink($link) :string
 {
     return "<a href='$link'>Sign up here!</a>";

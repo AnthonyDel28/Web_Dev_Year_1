@@ -3,7 +3,7 @@
         <h3>Connect your account</h3>
         <div class="login-form">
             
-            <form id="login" method="post" action="./action/login.php">
+            <form id="login" method="post" action="index.php?view=action/login">
                     <label for="username">
                         <p>Username : </p>
                     </label>
@@ -11,7 +11,7 @@
                 <label for="password">
                     <p>Password : </p>
                 </label>
-                <input type="text" name="password" id="password" placeholder="Password">
+                <input type="text" name="pwd" id="pwd" placeholder="Password">
                 <button type="submit" form="login" value="Submit">Confirm</button>
             </form>
             <div class="no-account">
