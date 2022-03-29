@@ -1,6 +1,6 @@
 <?php
 
-define("username", "Anthon");
+define("username", "Anthony");
 define("password", "root");
 
 ?>
