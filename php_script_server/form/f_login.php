@@ -15,7 +15,16 @@
                 <button type="submit" form="login" value="Submit">Confirm</button>
             </form>
             <div class="no-account">
-                <p class="no-account-text">No account yet? <a href="./index.php?view=form/f_signup">Sign up here!</a></p>
+                <p class="no-account-text">No account yet? 
+                        <?php
+                            print signUpLink("./index.php?view=form/f_signup");
+                        ?>
+                </p>
+                <p class="no-account-text">Forgot password? 
+                        <?php
+                            print forgotLink("./index.php?view=form/f_forgot");
+                        ?>
+                </p>
             </div>
         </div>
     </div>
