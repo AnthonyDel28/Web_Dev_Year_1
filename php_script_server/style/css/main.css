@@ -282,15 +282,21 @@ h3 {
 
 /*------------------------------------------ Profile page --------------------------------*/
 
+.profile-box {
+    display: flex;
+}
+
 .profile-title {
+    display: flex;
+    justify-content: center;
     color: rgb(0, 162, 255);
     font-size: 50px;
     font-family: 'Anton', sans-serif;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 
 .profile-sub-title {
-    color: white;
+    color: rgb(0, 162, 255);
     text-align: center;
     font-size: 25px;
     font-family: 'Anton', sans-serif;
@@ -298,10 +304,7 @@ h3 {
 
 .profile-field {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
 }
 
 .profile-field button {
@@ -317,6 +320,62 @@ h3 {
     color: white;
 }
 
+.profile-picture {
+    text-align: center;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px rgb(0, 162, 255) solid;
+}
+
+.profile-infos-label {
+    color: white;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;;
+}
+
+.profile-infos-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 25px;
+}
+
+.profile-infos {
+    color: rgb(0, 162, 255);
+    font-size: 19px;
+    text-align: center;
+}
+
+.profile-infos-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.change-picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.change-picture form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-picture form input {
+    color: rgb(0, 162, 255);
+}
 /*------------------------------------------Sign Up Page -------------------*/
 
 .signup-box {
@@ -401,3 +460,27 @@ h3 {
     border: 1px solid rgb(0, 162, 255);
     margin-bottom: 10px;
 }
+
+.image-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.upload {
+    background-color: rgba(0, 0, 0, 0.678);
+    color: rgb(0, 162, 255);
+}
+
+.upload:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 162, 255);
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(0, 162, 255);
+    cursor: pointer;
+}
+

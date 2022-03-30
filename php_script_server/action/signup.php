@@ -17,7 +17,9 @@ if (!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['pwd'
     // on récupère l'id de la dernière ligne insérée, afin de vérifier que l'insert s'est bien exécuté
     $return = $dbh->lastInsertId();
     if ($return) {
-        echo "Utilisateur id " . $return;
+        session_start();
+        $_SESSION['username'] = $_POST['username'];
+        header('Location: index.php?view=view/profile');
     } else {
         echo "Erreur!";
     }
