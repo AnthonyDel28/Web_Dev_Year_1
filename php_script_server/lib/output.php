@@ -17,6 +17,11 @@ function signUpLink($link) :string
     return "<a href='$link'>Sign up here!</a>";
 }
 
+function replayLink($link) :string
+{
+    return "<a href='$link' class='replay'>Try again!</a>";
+}
+
 function forgotLink($link) :string 
 {
     return "<a href='$link'>Click here!</a>";

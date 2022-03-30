@@ -210,7 +210,7 @@ h3 {
 
 .result-box {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
 }
@@ -225,12 +225,21 @@ h3 {
     font-family: 'Anton', sans-serif;
     font-size: 40px;
     margin-top: 25px;
+    color: white;
+}
+
+.result-text {
+    color: white;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 0px;
 }
 
 .number {
     color: rgb(0, 162, 255);
     font-size: 80px;
     font-weight: 900;
+    margin-bottom: 0px;
 }
 
 .replay {
@@ -238,6 +247,15 @@ h3 {
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.527);
     color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 183, 255);
+}
+
+.replay:hover {
+    text-decoration: none;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.815);
+    color: rgb(0, 140, 255);
     border-radius: 5px;
     border: 1px solid rgb(0, 183, 255);
 }
