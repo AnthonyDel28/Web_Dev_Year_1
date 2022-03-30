@@ -310,7 +310,6 @@ h3 {
     color: rgb(0, 162, 255);
     font-size: 50px;
     font-family: 'Anton', sans-serif;
-    margin-top: 25px;
 }
 
 .profile-sub-title {
@@ -323,6 +322,8 @@ h3 {
 .profile-field {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-field button {
@@ -375,6 +376,11 @@ h3 {
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+
+.profile-infos-cell a {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .change-picture {
@@ -501,4 +507,3 @@ h3 {
     box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(0, 162, 255);
     cursor: pointer;
 }
-

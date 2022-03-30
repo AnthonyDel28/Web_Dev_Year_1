@@ -5,6 +5,8 @@
 // On vérifie si l'utilisateur est connecté. Pour ce faire, il convient de vérifier si la donnée correspondante existe en session
 if (!empty($_SESSION['username'])) {
     // Si c'est le cas, on supprime les valeurs de session
+    $last_login_time = $dbh->prepare("UPDATE user SET lastlogin = CURRENT_TIME WHERE username = '{$_SESSION[ "username" ]}'");
+    $last_login_time->execute();
     session_unset();
     // Comme le projet fonctionne avec des includes, requires et autres redirections, il convient de fermer les possibles sessions encore ouvertes dans d'autres scripts
     // session_commit est un alias de session_write_close, les deux peuvent être utilisés

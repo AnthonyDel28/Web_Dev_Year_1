@@ -14,7 +14,7 @@
                     <label for="password">
                         <p>Password : </p>
                     </label>
-                    <input type="text" name="pwd" id="pwd" placeholder="Password">
+                    <input type="password" name="pwd" id="pwd" placeholder="Password">
                     <button type="submit" form="login" value="Submit">Confirm</button>
                 </form>
                 <div class="no-account">

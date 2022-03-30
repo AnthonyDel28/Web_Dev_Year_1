@@ -35,16 +35,16 @@
                 </div>
                 <div class="profile-infos-row">
                     <div class="profile-infos-cell">
-                        <p class="profile-infos-label">ID</p>
-                        <p class="profile-infos"><?php print $id_user;?></p>
-                    </div>
-                    <div class="profile-infos-cell">
-                        <p class="profile-infos-label">Username</p>
+                    <p class="profile-infos-label">Username</p>
                         <p class="profile-infos"><?php print $name_user;?></p>
                     </div>
                     <div class="profile-infos-cell">
-                        <p class="profile-infos-label">E-mail</p>
+                    <p class="profile-infos-label">E-mail <a href="index.php?view=form/f_change_email">(Change)</a></p>
                         <p class="profile-infos"><?php print $email_user;?></p>
+                    </div>
+                    <div class="profile-infos-cell">
+                        <p class="profile-infos-label">Password <a href="index.php?view=form/f_change_password">(Change)</a></p>
+                        <p class="profile-infos">******</p>
                     </div>
                 </div>
                 <div class="change-picture">
