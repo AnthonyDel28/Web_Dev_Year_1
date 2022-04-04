@@ -10,25 +10,18 @@
                     $infos->execute();
                     $profile_infos = $infos->fetchAll();
                     foreach($profile_infos as $profile_data){
-                        global $id_user;
                         $id_user = $profile_data['id'];
                         $name_user = $profile_data['username'];
                         $email_user = $profile_data['email'];
+                        $picture_status = $profile_data['pic'];
                     }
+                    
                 ?>
                 <div class="profile-picture">
                     <?php
-                        $infos = $dbh->prepare("SELECT pic FROM user WHERE username = '{$_SESSION[ "username" ]}'");
-                        $infos->execute();
-                        $profile_infos = $infos->fetchAll();
-                        foreach($profile_infos as $data_infos){
-                            global $picture_status;
-                            $picture_status = $data_infos['pic'];
-                        }
-
-                        if($picture_status == TRUE){
+                        if(isset($picture_status)){
                             print '<img src="./uploads/profile/'.$id_user.'.jpg">';
-                        } elseif(is_null($picture_status)){
+                        } else {
                             print '<img src="./uploads/profile/default.png">';
                         }
                     ?>

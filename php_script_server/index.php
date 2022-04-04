@@ -7,6 +7,7 @@ require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/lib/db.php';
 // Un fichier comprenant des fonctions génériques [functions]
 require_once __DIR__ . '/lib/output.php';
+require_once __DIR__ . '/lib/tools.php';
 // Un fichier comprenant les fonctions liées à l'utilisateur [function + pdo]
 require_once __DIR__ . '/lib/user.php';
 

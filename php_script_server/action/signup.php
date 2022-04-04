@@ -27,5 +27,5 @@ if (!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['pwd'
 } else {
     // Sinon, on redirige vers le formulaire
     header('Location: index.php?view=view/signup');
-    die;
+    die; 
 }
