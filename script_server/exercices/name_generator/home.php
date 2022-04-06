@@ -1,6 +1,7 @@
 <?php
 include('data/names_array.php');
 include('lib/tools.php');
+$_SESSION['test'] = "test";
 ?>
 
 
