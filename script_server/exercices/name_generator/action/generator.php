@@ -1,7 +1,6 @@
 <section class="result">
 
 <?php
-session_start();
 
 if(isset($_POST['country']) && isset($_POST['quantity']) && isset($_POST['name_option'])) {
     $tmp = array();
