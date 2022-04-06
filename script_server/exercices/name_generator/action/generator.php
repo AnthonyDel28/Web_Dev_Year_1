@@ -8,7 +8,6 @@ if(isset($_POST['country']) && isset($_POST['quantity']) && isset($_POST['name_o
     while(count($tmp) < $_POST['quantity']){
         if($_POST['name_option'] == 'Name' || $_POST['name_option'] == 'Surname'){
             if($_POST['name_option'] == 'Name'){
-                //$first_name = $firstname[$_POST['country']][array_rand($firstname[$_POST['country']])];
                 $tmp[] = $firstname[$_POST['country']][array_rand($firstname[$_POST['country']])];
                 $tmp = array_unique($tmp);
             } 
