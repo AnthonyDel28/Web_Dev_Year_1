@@ -4,7 +4,6 @@
 session_start();
 
 if(isset($_POST['country']) && isset($_POST['quantity']) && isset($_POST['name_option'])) {
-    $index = intval($_POST['quantity']);
     $tmp = array();
     while(count($tmp) < $_POST['quantity']){
         if($_POST['name_option'] == 'Name' || $_POST['name_option'] == 'Surname'){
