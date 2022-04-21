@@ -1,41 +1,31 @@
 <?php
 
-
-$dbh = new PDO('mysql:host=localhost;dbname=Mediarnaque', 'root', 'root');
-
-/*
-$result = $dbh->query("SELECT * FROM vcard");
-$data = $result->fetch(PDO::FETCH_ASSOC);
-foreach($data as $key => $value){
-    print $value[] . '<br>';
-}*/
-
-/* $sth = $dbh->query("SELECT nameB, modelV FROM vcard INNER JOIN brand ON vcard.brandV = brand.idB");
-
- $result = $sth->fetchAll();
- foreach($result as $key => $value){
-    print $value['nameB'] . ' ' . $value['modelV'] . '<br>';
-} */
+/*  -> PDO
+ *  Connexion
+ *  -> Query
+ *  -> Prepare + Execute (Params)
+ *  -> Result
+ *  -> Fetch?
+ *  > HORS PDO (Traitement)
+ */
 
 
-#-----------------------------------------------------------------
+$connect = new PDO('mysql:host=localhost;dbname=Mediarnaque', 'root', 'root');
 
-$order = "DESC";
-$sql_query = 'SELECT DISTINCT *,
-                b.nameB as marque, 
-                CONCAT(bcpu.nameB," ",modelCpu) as namecpu, 
-                bvcard.nameB as brandvcard
-        FROM laptop as l, brand as b, brand as bcpu, brand as bvcard, cpu as c, vcard as v, color as col 
-        WHERE b.idB=l.brandL AND c.idCpu=l.cpuL AND v.idV=l.vcardL AND bcpu.idB=c.brandCpu AND bvcard.idB=v.brandV AND col.idC=l.colorL';
+$color = "Turquoise";
+$sql = "INSERT INTO color (nameC) VALUES (?)";
+$result = $connect->prepare($sql);
+$result->execute([$color]);
 
-$result = $dbh->query($sql_query);
+if (!$result->fetchColumn()){
 
-foreach($result as $data){
-    print $data['marque'] . ' ' . $data['namecpu'] . ' ' . $data['brandvcard'] . '<br>';
+    $res = $connect->prepare("INSERT INTO color VALUES (?, ?)");
+    $res->execute([6, $color]);
+
+    print $res->rowCount() . ' lignes ajoutées avec l\'id' . $connect->lastInsertId();
+} else {
+    print 'La couleur ' . $color . ' existe déjà en base de données!';
 }
-
-
-
 
 ?>
 
