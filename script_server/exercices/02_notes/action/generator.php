@@ -13,6 +13,7 @@ require_once ('../lib/tools.php');
     </thead>
     <tbody>
         <?php
+            ksort($notes);
             foreach($notes as $student => $note){
                 print "<tr style='background-color:".colorNote($note).";'>";
                 print '<td>'.$student.'</td>';
