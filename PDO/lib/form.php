@@ -36,7 +36,7 @@ function getForm(string $content, string $action = '?', string $method = 'get', 
 function getSelect(string $label, string $name, string $options, string $classes = '', string $styles = ''): string
 {
     return '<label for="f-' . $name . '">' . $label . '</label>
-    <select class="f-select form-control ' . $classes . '" name="f-' . $name . '" id="f-' . $name . '" style="max-width: 300px; ' . $styles . '">
+    <select multiple class="f-select form-control ' . $classes . '" name="f-' . $name . '[]" id="f-' . $name . '" style="max-width: 300px; ' . $styles . '">
         ' . $options . '
     </select>';
 }
@@ -55,7 +55,7 @@ function getSelect(string $label, string $name, string $options, string $classes
  * @param string $param additional input attributes (raw string)
  * @return string
  */
-function getInput(string $label, string $name, string $type, string $classes = '', string $styles = '', string $param = ''): string
+function getInput(string $label, string $name, string $type, string $classes = '', string $param = '', string $styles = ''): string
 {
     return '<label for="f-' . $name . '">' . $label . '</label>
             <input class="f-input ' . $classes . '" type="' . $type . '" name="f-' . $name . '" id="f-' . $name . '" ' . $param . ' style="' . $styles . '">';

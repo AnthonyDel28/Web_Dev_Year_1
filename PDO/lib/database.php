@@ -14,7 +14,7 @@ function connect() {
     if (!$dbh) {
         // try / catch : gestion d'erreur. Si le code dans la partie "try" échoue, alors la partie "catch" s'exécute.
         try {
-            require_once __DIR__ . '/../config.php';
+            require_once __DIR__ . '/config.php';
             // La connexion PDO utilise les constantes présentes dans le script config.php
             $dbh = new PDO('mysql:dbname=' . DB_NAME . ';host=' . DB_HOST . ';charset=utf8', DB_USER, DB_PASSWORD);
             // On spécifie le mode d'erreur de PDO via la méthode setAttribute et les constantes de PDO

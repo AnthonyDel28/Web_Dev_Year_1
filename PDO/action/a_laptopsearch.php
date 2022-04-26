@@ -7,3 +7,5 @@
 // 2e partie : ajoutez un bouton permettant de télécharger le résultat de la recherche au format json
 // 3e partie : ajoutez un bouton permettant d'exporter le résultat de la recherche dans un fichier au format csv. Le fichier pourra être téléchargé, mais il sera également créé dans le dossier 'reports' du projet
 
+
+print_r($_POST);
