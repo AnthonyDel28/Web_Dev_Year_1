@@ -11,19 +11,5 @@
 // Initialisation de la connexion à la BDD
 $connect = connect();
 
-print_r($_POST);
+print_r(array_keys($_POST));
 
-SELECT brand.nameB as `Marque`,
-       color.nameC as `Couleur`,
-       cpu.modelCpu as `Processeur`,
-       laptop.ramL as `Ram`,
-       laptop.screenL as `Taille d'écran`,
-       vcard.modelV as `Carte graphique`,
-       laptop.weightL as `Poids`,
-       laptop.priceL as `Prix`
-FROM laptop
-         JOIN brand ON laptop.brandL = brand.idB
-         JOIN vcard ON laptop.vcardL = vcard.idV
-         JOIN color ON laptop.colorL = color.idC
-         JOIN cpu ON laptop.cpuL = cpu.idCpu
-WHERE laptop.brandL = ? AND laptop.colorL = ? AND laptop.cpuL = ? AND laptop.ramL = ? AND laptop.screenL = ? AND laptop.vcardL = ? AND laptop.priceL < ? AND laptop.weightL BETWEEN ?  AND ?
