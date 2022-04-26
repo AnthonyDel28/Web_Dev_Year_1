@@ -49,7 +49,7 @@ function getRange(string $sql, string $name, string $label, int $step = 1, strin
     $result = pQuery($sql);
     $data = $result->fetch(PDO::FETCH_NUM);
     return '<label>' . $label . '</label>
-    <input type="range" name="' . $name . '" min="' . $data[0] . '" max="' . $data[1] . '" step="' . $step . '" 
+    <input type="range" name="' . $name . 'L" min="' . $data[0] . '" max="' . $data[1] . '" step="' . $step . '" 
     oninput="document.getElementById(\'' . $name . '\').textContent=value + \'' . $unit . '\'">
     <span id="' . $name . '">' . ($data[1] / 2) . $unit . '</span>';
 

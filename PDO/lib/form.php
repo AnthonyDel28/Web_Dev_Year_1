@@ -35,8 +35,15 @@ function getForm(string $content, string $action = '?', string $method = 'get', 
  */
 function getSelect(string $label, string $name, string $options, string $classes = '', string $styles = ''): string
 {
+    if($classes == 'None'){
+        $multiple = ' ';
+        $multiple_array = '';
+    } else {
+        $multiple = 'multiple';
+        $multiple_array = '[]';
+    }
     return '<label for="f-' . $name . '">' . $label . '</label>
-    <select multiple class="f-select form-control ' . $classes . '" name="f-' . $name . '[]" id="f-' . $name . '" style="max-width: 300px; ' . $styles . '">
+    <select ' . $multiple . ' class="f-select form-control ' . $classes . '" name="' . $name . 'L' . $multiple_array . '" id="f-' . $name . '" style="max-width: 300px; ' . $styles . '">
         ' . $options . '
     </select>';
 }
@@ -58,5 +65,5 @@ function getSelect(string $label, string $name, string $options, string $classes
 function getInput(string $label, string $name, string $type, string $classes = '', string $param = '', string $styles = ''): string
 {
     return '<label for="f-' . $name . '">' . $label . '</label>
-            <input class="f-input ' . $classes . '" type="' . $type . '" name="f-' . $name . '" id="f-' . $name . '" ' . $param . ' style="' . $styles . '">';
+            <input class="f-input ' . $classes . '" type="' . $type . '" name="' . $name . 'L" id="f-' . $name . '" ' . $param . ' style="' . $styles . '">';
 }

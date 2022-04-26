@@ -3,13 +3,26 @@ require_once './lib/database.php';
 require_once './lib/lib.php';
 require_once './form/formlib.php';
 
-
+// Initialisation de la connexion à la BDD
 $connect = connect();
 
+// On implode le tableau $_POST avec la fonction array_keys pour n'obtenir que les clés du tableau
+$key_array =  implode(", ", array_keys($_POST));
 
-$insert = $connect->query("INSERT INTO laptop (brandL, colorL, cpuL, ramL, screenL, vcardL, weightL, priceL)
-VALUES ('". $_POST['brand'] ."', '". $_POST['color'] ."' , '". $_POST['cpu'] ."' , '". $_POST['ram'] . "' 
-, '". $_POST['screen'] ."' , '". $_POST['vcard'] ."' , '". $_POST['weight'] ."' , '". $_POST['price'] ."')");
+// On implode à nouveau $_POST, cette fois pour obtenir les données
+$data_array = implode(", ", $_POST);
+
+$insert = $connect->prepare('INSERT INTO laptop (' . $key_array . ') VALUES ( ' . $data_array . ')');
+$insert->execute();
+$check = $insert->rowCount();
+if ($check) {
+    echo $check . 'ligne a été ajoutée';
+} else {
+    echo 'Erreur!';
+}
+
+
+
 
 
 

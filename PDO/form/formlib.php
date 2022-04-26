@@ -29,14 +29,24 @@ function getLaptopSearchForm() : string
 // Lorsqu'un ajout de laptop sera validé en base de données, un message de confirmation devra être affiché à l'utilisateur. Dans le cas contraire, un message d'erreur devra lui afficher la raison de l'échec.
 
 
-function getLaptopInsertForm($input_size, $input_and_price) :string
-{
+function getLaptopInsertForm() :string
+{   /*
+    Essai avec inpu au lieu de select, mais erreur lors de l'insertion car les champs correspondent en fait à des numéros dans la table laptop
     $add = getInput('Marque', 'brand', 'text', 'form-control', 'style="width: 150px;" placeholder="Marque du PC"')
         . getInput('Couleur', 'color', 'text', 'form-control', 'style="width: 150px;" placeholder="Couleur du PC" ')
         . getInput('Processeur', 'cpu', 'text', 'form-control', 'style="width: 150px;" placeholder="Processeur"')
         . getInput('Mémoire', 'ram', 'number', 'form-control', 'style="width: 150px;" placeholder="RAM en GB" ')
         . getInput('Ecran', 'screen', 'number', 'form-control', 'style="width: 150px;" placeholder="Taille d\'écran" ')
         . getInput('Carte Graphique', 'vcard', 'text', 'form-control', 'style="width: 150px;" placeholder="Carte graphique"')
+        . getInput('Poids', 'weight', 'number', 'form-control', 'style="width: 150px;" placeholder="Poids en Gr"')
+        . getInput('Prix', 'price', 'number', 'form-control', 'style="width: 150px;" placeholder="Prix en €"')
+    */
+    $add = getSelect('Marque', 'brand', getOption("SELECT b.idB, b.nameB FROM laptop l JOIN brand b ON b.idB = l.brandL GROUP BY l.brandL ORDER BY nameB"), 'None')
+        . getSelect('Couleur', 'color', getOption("SELECT idC, nameC FROM color ORDER BY nameC"), 'None')
+        . getSelect('Processeur', 'cpu', getOption("SELECT idCpu, CONCAT (nameB, ' ', modelCpu) AS `model` FROM cpu c JOIN brand b ON b.idB = c.brandCpu ORDER BY `model`"), 'None')
+        . getSelect('Mémoire', 'ram', getOption("SELECT ramL AS a, CONCAT(ramL, 'Gb') AS b FROM laptop GROUP BY ramL ORDER BY ramL"), 'None')
+        . getSelect('Taille d\'écran', 'screen', getOption("SELECT screenL AS a, CONCAT(screenL, '\"') AS b FROM laptop GROUP BY screenL ORDER BY screenL"), 'None')
+        . getSelect('Carte Graphique', 'vcard', getoption("SELECT idV, CONCAT (modelV,' ',nameB) AS `model` FROM vcard v JOIN brand b ON b.idB = v.brandV ORDER BY `model`"), 'None')
         . getInput('Poids', 'weight', 'number', 'form-control', 'style="width: 150px;" placeholder="Poids en Gr"')
         . getInput('Prix', 'price', 'number', 'form-control', 'style="width: 150px;" placeholder="Prix en €"')
 
