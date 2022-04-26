@@ -31,7 +31,7 @@ function getLaptopSearchForm() : string
 
 function getLaptopInsertForm() :string
 {   /*
-    Essai avec inpu au lieu de select, mais erreur lors de l'insertion car les champs correspondent en fait à des numéros dans la table laptop
+    Essai avec input au lieu de select, mais erreur lors de l'insertion car les champs correspondent en fait à des numéros dans la table laptop
     $add = getInput('Marque', 'brand', 'text', 'form-control', 'style="width: 150px;" placeholder="Marque du PC"')
         . getInput('Couleur', 'color', 'text', 'form-control', 'style="width: 150px;" placeholder="Couleur du PC" ')
         . getInput('Processeur', 'cpu', 'text', 'form-control', 'style="width: 150px;" placeholder="Processeur"')

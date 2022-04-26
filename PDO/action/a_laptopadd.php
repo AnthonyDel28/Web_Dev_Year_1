@@ -15,10 +15,11 @@ $data_array = implode(", ", $_POST);
 $insert = $connect->prepare('INSERT INTO laptop (' . $key_array . ') VALUES ( ' . $data_array . ')');
 $insert->execute();
 $check = $insert->rowCount();
+$insert->setFetchMode(PDO::FETCH_OBJ);
 if ($check) {
-    echo $check . 'ligne a été ajoutée';
+    print $check . ' ligne a été ajoutée ! <br>';
 } else {
-    echo 'Erreur!';
+    print 'Erreur lors de l\'insertion!';
 }
 
 
