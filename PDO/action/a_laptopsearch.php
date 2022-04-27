@@ -32,7 +32,8 @@ if (isset($_POST['brandL']) && isset($_POST['colorL']) && isset($_POST['cpuL']) 
                      JOIN cpu ON laptop.cpuL = cpu.idCpu
             WHERE laptop.brandL IN (' . $listbrand . ') AND laptop.colorL IN (' . $listcolor . ') AND laptop.cpuL IN (' . $listcpu . ') AND laptop.ramL IN (' . $listram . ')
             AND laptop.screenL IN (' . $listscreen . ') AND laptop.vcardL IN (' . $listvcard . ')  
-            AND laptop.weightL BETWEEN ' . weightCheck($_POST['weightL']) . '  AND ' . substr($listweight, -4) . ' AND laptop.priceL <  ' . $listprice . '');
+            AND laptop.weightL BETWEEN ' . weightCheck($_POST['weightL']) . '  AND ' . substr($listweight, -4) . ' AND laptop.priceL <  ' . $listprice . '
+            ORDER BY laptop.priceL');
 
         $result->execute();
         $result->setFetchMode(PDO::FETCH_OBJ);
