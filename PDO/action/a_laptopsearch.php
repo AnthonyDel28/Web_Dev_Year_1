@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../lib/lib.php';
 
 if (isset($_POST['brandL']) && isset($_POST['colorL']) && isset($_POST['cpuL']) && isset($_POST['ramL']) &&
     isset($_POST['screenL']) && isset($_POST['vcardL']) && isset($_POST['weightL']) && isset($_POST['priceL'])){
@@ -14,9 +15,8 @@ if (isset($_POST['brandL']) && isset($_POST['colorL']) && isset($_POST['cpuL']) 
         $listweight = substr($listweight_get_int, 0, 4) . ', ' . substr($listweight_get_int, -4);
         $listprice = implode(",", $_POST['priceL']);
 
-
-        $tbody = '';
         $result = $connect->prepare('SELECT brand.nameB as `Marque`,
+                   laptop.brandL as `idB`, 
                    color.nameC as `Couleur`,
                    cpu.modelCpu as `Processeur`,
                    laptop.ramL as `Ram`,
@@ -32,12 +32,12 @@ if (isset($_POST['brandL']) && isset($_POST['colorL']) && isset($_POST['cpuL']) 
                      JOIN cpu ON laptop.cpuL = cpu.idCpu
             WHERE laptop.brandL IN (' . $listbrand . ') AND laptop.colorL IN (' . $listcolor . ') AND laptop.cpuL IN (' . $listcpu . ') AND laptop.ramL IN (' . $listram . ')
             AND laptop.screenL IN (' . $listscreen . ') AND laptop.vcardL IN (' . $listvcard . ')  
-            AND laptop.weightL BETWEEN ' . substr($listweight, 0, 4) . '  AND ' . substr($listweight, -4) . ' AND laptop.priceL <  ' . $listprice . '');
+            AND laptop.weightL BETWEEN ' . weightCheck($_POST['weightL']) . '  AND ' . substr($listweight, -4) . ' AND laptop.priceL <  ' . $listprice . '');
 
         $result->execute();
         $result->setFetchMode(PDO::FETCH_OBJ);
         foreach ($result as $row) {
-            $tbody .= '<tr><td><img src="./img/5_min.png" alt="' . $row->Marque . '"></td>
+            $tbody .= '<tr><td><img src="./img/' . $row->idB . '_min.png" alt="' . $row->Marque . '"></td>
                                 <td>' . ucfirst($row->Marque) . '</td>
                                 <td>' . ucfirst($row->Processeur) . '</td>
                                 <td>' . ucfirst($row->Vcard) . '</td>

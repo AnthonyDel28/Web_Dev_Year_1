@@ -3,7 +3,7 @@
 /**
  * PDO Functions
  */
-
+$tbody = '';
 /**
  * @param string $sql must contains 2 columns in SELECT. First one will be "id" value and second one will be "name" value
  * @return string
@@ -53,4 +53,10 @@ function getRange(string $sql, string $name, string $label, int $step = 1, strin
     oninput="document.getElementById(\'' . $name . '\').textContent=value + \'' . $unit . '\'">
     <span id="' . $name . '">' . ($data[1] / 2) . $unit . '</span>';
 
+}
+
+function weightCheck($array) {
+        foreach($array as $key => $value){
+            return intval($value);
+        }
 }
