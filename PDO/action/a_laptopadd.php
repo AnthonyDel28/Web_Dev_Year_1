@@ -12,7 +12,7 @@ $key_array =  implode(", ", array_keys($_POST));
 // On implode à nouveau $_POST, cette fois pour obtenir les données
 $data_array = implode(", ", $_POST);
 
-$insert = $connect->prepare('INSERT INTO laptop (' . $key_array . ') VALUES ( ' . $data_array . ')');
+$insert = $connect->prepare('INSERT INTO laptop (' . $key_array . ', vatL) VALUES ( ' . $data_array . ', 21)');
 $insert->execute();
 $check = $insert->rowCount();
 $insert->setFetchMode(PDO::FETCH_OBJ);
