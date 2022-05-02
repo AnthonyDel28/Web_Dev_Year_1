@@ -26,22 +26,30 @@ function connect() {
     return $dbh;
 }
 
-
 $connect = connect();
+$color = 'Cyan';
+$id = 5;
 
-$color = 'violet';
+$result = $connect->query('SELECT * FROM color', PDO::FETCH_OBJ);
+
+foreach($result as $row){
+    print $row->idC . ' -> ' . $row->nameC . '<br>';
+}  print '<br>';
 
 
-$res = $connect->prepare("INSERT INTO color (nameC) VALUES (?)");
-$res->execute([$color]);
+$update = $connect->prepare('UPDATE color SET nameC = ? WHERE idC = ?');
+$update->execute([$color, $id]);
 
-$res->setFetchMode(PDO::FETCH_OBJ);
+if ($update->rowCount()) {
+    echo 'La couleur ' . $row->nameC . ' a été mise à jour en ' . $color . '<br>';
+}
 
-$res2 = $connect->prepare("SELECT * FROM color");
-$res2->execute();
-$res2->setFetchMode(PDO::FETCH_OBJ);
-foreach($res2 as $row){
-        print $row->idC . ' -> ' . $row->nameC . '<br>';
-    }
+
+$result = $connect->query('SELECT * FROM color', PDO::FETCH_OBJ);
+
+foreach($result as $row){
+    print $row->idC . ' -> ' . $row->nameC . '<br>';
+}  print '<br>';
+
 
 
