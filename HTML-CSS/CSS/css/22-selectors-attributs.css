@@ -1,1 +1,48 @@
 /* Created 09-05-2022 */
+
+/* premet de sélectionner une balise sur l'attribut
+ou la valeur
+ */
+
+.att01 p[lang] {
+    color: red;
+}
+
+.att02 p[lang="fr"] {
+    color: blueviolet;
+}
+
+.att02 p[lang="de"] {
+    color: green;
+}
+
+input[type="email"] {
+    background-color: #2aa198;
+}
+
+input[type="submit"] {
+    color: red;
+}
+
+
+/* Vérifie si la valeur de l'attribut commenre par: */
+.att04 a[href^=https] {
+    color: #0cbb0c;
+}
+
+.att04 a[href^=https]:hover {
+    color: blue;
+}
+
+
+/* Vérifie si la valeur de l'attribut se termine par: */
+.att04 a[href$="pdf"] {
+    color: red;
+}
+
+/* Vérifie si la valeur de l'attribut contient une chaine */
+
+
+.att04 a[href*="img"] {
+    color: purple;
+}

@@ -68,3 +68,7 @@ tr:nth-child(odd):hover {
 table, td, th {
     border: 1px black solid;
 }
+
+.not li:not(:last-child) {
+    border-bottom: 1px solid grey;
+}

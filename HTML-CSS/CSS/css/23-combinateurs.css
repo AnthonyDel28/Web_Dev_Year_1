@@ -1,0 +1,13 @@
+/* Created 09-05-2022 */
+
+/* Sélecteur d'enfants directes */
+
+.childs > ul {
+    list-style-type: square;
+}
+
+/* Sélecteur d'adjacence */
+
+.add h1 + p {
+    font-weight: bold;
+}
