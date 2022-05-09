@@ -9,5 +9,6 @@
     <mapping directory="$PROJECT_DIR$/script_server/PDO_GROUP_EVA_STEF_ANTHONY" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/script_server/myPDO" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/script_server/pdo_group" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/webservices" vcs="Git" />
   </component>
 </project>
