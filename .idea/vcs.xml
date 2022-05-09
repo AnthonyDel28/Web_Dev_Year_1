@@ -4,6 +4,8 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PDO" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/PDO/pdo_group" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PHP/PDO/pdo_group" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PHP/webservices" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/myPDO" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/pdo_group" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/script_server/PDO_GROUP_EVA_STEF_ANTHONY" vcs="Git" />

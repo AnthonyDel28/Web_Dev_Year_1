@@ -1,0 +1,70 @@
+/* Created 09-05-2022 */
+
+/* Elles permettent de cibler un élément
+suivant un état ou une action ou une position
+ */
+
+/*
+:link (liens non visités)
+:visited (liens visités)
+:hover (liens survolés)
+:active (liens actifs)
+ */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+}
+
+a:visited {
+    color: red;
+}
+
+input:invalid {
+    color: red;
+}
+
+input:valid {
+    color: green;
+}
+
+input:checked {
+    color: yellow;
+    margin-left: 1rem;
+}
+
+input:focus {
+    background-color: deeppink;
+}
+
+.first-last li:first-child, .first-last li:last-child {
+    color: red;
+}
+
+/* nth-child(odd) nième enfant impair
+/* nth-child(even) nième enfant pair
+*/
+
+.nieme li:nth-child(even) {
+    color: blue;
+}
+
+tr:nth-child(odd):hover {
+    background-color: yellow;
+}
+
+table, td, th {
+    border: 1px black solid;
+}

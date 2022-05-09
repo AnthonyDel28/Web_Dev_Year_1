@@ -1,0 +1,49 @@
+/* Created 09-05-2022 */
+/* Pseudo-Elements
+
+Ils permettent de cibler du contenu sans l'aide
+de balises
+ */
+
+
+.letter p::first-letter {
+    font-size: 2rem;
+    color: blue;
+}
+
+.line p::first-line {
+    font-size: 1rem;
+    font-family: "Courier New", Courier, monospace;
+    color: #0a58ca;
+}
+
+.content p::after {
+    font-style: italic;
+    content: "(John Doe)";
+}
+
+.content .servais::after {
+    color: #0cbb0c;
+    content: "(Dominique)";
+}
+
+.img p::before {
+    content: url("../img/icons8-search-30.png");
+}
+
+.img p::after {
+    content: url("../img/icons8-bitcoin-30.png")
+}
+
+.selection p::selection {
+    color: #0BAEF0;
+    background-color: black;
+}
+
+input::placeholder {
+    color: #0cbb0c;
+}
+
+li::marker {
+    color: #2aa198;
+}
