@@ -1,0 +1,98 @@
+/* Created 09-05-2022 */
+
+
+div {
+    box-sizing: border-box;
+    padding: 1rem;
+    color: white;
+}
+
+.team div:nth-child(1) {
+    background-color: rgb(73, 72, 71);
+}
+
+.team div:nth-child(2) {
+    background-color: rgb(87, 55, 26);
+}
+
+.team div:nth-child(3) {
+    background-color: rgb(38, 37, 36);
+}
+
+.team div:nth-child(4) {
+    background-color: #2c3e50;
+}
+
+/* A partie de 768px on intègre les règles ci
+dessous pour la tablette
+ */
+
+@media screen and (min-width: 768px){
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .team div {
+        width: 50%;
+    }
+    .about {
+        display: flex;
+    }
+    .about div:first-child {
+        width: 60%;
+    }
+    .about div:last-child {
+        width: 40%;
+    }
+    .about div:last-child {
+        background-color: gray;
+    }
+    nav ul {
+        display: flex;
+        justify-content: end;
+    }
+    nav ul li {
+        padding: 15px;
+    }
+}
+
+nav {
+    text-align: center;
+    background-color: lightslategray;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    padding: 0.8rem 0;
+}
+
+nav li:hover {
+    background-color: #2c3e50;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 992px) {
+    .team div {
+        width: 25%;
+    }
+}
+
+
+.about div:first-child {
+    background-color: #0cbb0c;
+}
+
+
