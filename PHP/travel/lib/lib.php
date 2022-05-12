@@ -168,3 +168,14 @@ function getRandPassengersByDistance(int $distance): int
     }
     return mt_rand(50, $passengers_max);
 }
+
+function getAirports() :object {
+    global $connect;
+
+    $request = $connect->prepare('SELECT l.name, c.name as country, (SELECT MAX(r.length) as length FROM location_runway lr, runway r WHERE lr.runwayid = r.id AND lr.locationid = l.id) as runway, l.longitude, l.latitude
+    FROM location l, country c WHERE l.countryid = c.id ORDER BY name');
+    $request->execute();
+    $request->setFetchMode(PDO::FETCH_OBJ);
+    return $request;
+    
+}

@@ -21,6 +21,15 @@
         <th>Longitude</th>
         <th>Latitude</th>
     </tr>
+    <?php
+        foreach(getAirports() as $row){
+            print '<tr><td> ' .  $row->name . ' </td>';
+            print '<td>' . $row->country . '</td>';
+            print '<td>' . $row->runway . '</td>';
+            print '<td>' . $row->longitude . '</td>';
+            print '<td>' . $row->latitude . '</td></tr>';
+        }
+    ?>
     </thead>
     <tbody></tbody>
 </table>

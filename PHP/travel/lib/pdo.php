@@ -16,7 +16,7 @@ function connect()
         return $connect;
     } else {
         try {
-            $connect = new PDO('mysql:dbname=travel;host=localhost;charset=utf8', 'root', '');
+            $connect = new PDO('mysql:dbname=travel;host=localhost;charset=utf8', 'root', 'root');
             $connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $exception) {
             die ('Erreur: ' . $exception->getMessage());
