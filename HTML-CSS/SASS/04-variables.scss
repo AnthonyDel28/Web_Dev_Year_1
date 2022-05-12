@@ -1,0 +1,47 @@
+// Variables et fonctions natives
+
+$primary: red;
+$secondary: blue;
+$size: 2rem;
+
+$medium: "screen and (min-width: 768px)";
+$large: "screen and (min-width: 962px)";
+
+
+h1 {
+  color: $secondary;
+  font-size: $size;
+}
+
+h2 {
+  color: darken($secondary, 10%);
+}
+
+h3 {
+  color: darken($secondary, 35%);
+}
+
+p {
+  color: lighten($secondary, 30%);
+}
+
+span {
+  color: mix($secondary, #fff, 40%);
+}
+
+a {
+  color: complement($secondary);
+}
+
+@media #{$medium}
+{
+  header {
+    width: 100%;
+  }
+}
+
+@media #{$large}{
+  header {
+    width: 100%;
+  }
+}

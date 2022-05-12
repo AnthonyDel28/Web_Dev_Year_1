@@ -1,0 +1,37 @@
+h1 {
+  color: blue;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #0000cc;
+}
+
+h3 {
+  color: #00004d;
+}
+
+p {
+  color: #9999ff;
+}
+
+span {
+  color: #9999ff;
+}
+
+a {
+  color: yellow;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 962px) {
+  header {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=04-variables.css.map */

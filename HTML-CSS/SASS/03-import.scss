@@ -1,0 +1,22 @@
+// Inclusion de fichier (partials)
+
+@import 'partials/_variables.scss';
+@import 'partials/_minireset.scss';
+
+// Les fichiers doivent être de type .scss
+
+// Mettre un underscore devant le nom pour éviter la compilation
+// @import 'partials/_variables.scss', 'partials/_minireset.scss'
+body {
+  margin: $margin;
+  padding: $padding;
+}
+
+h1 {
+  color: $secondary;
+}
+
+p {
+  color: $dark;
+  border: $border-size $border-color $border-type;
+}

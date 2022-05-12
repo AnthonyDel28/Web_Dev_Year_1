@@ -1,0 +1,44 @@
+nav {
+  background-color: darkslategray;
+}
+nav h3 {
+  padding: 0.5rem;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline;
+  color: #4b2c20;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: yellow;
+}
+
+.title {
+  font-size: 2.2rem;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.about-container {
+  width: 90%;
+  padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .about-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 962px) {
+  .about-container {
+    justify-content: end;
+  }
+}
+
+/*# sourceMappingURL=02-nesting.css.map */

@@ -1,0 +1,49 @@
+// Nesting (imbrication ou encapsulation) => Création de modules distincts
+// Ex: modules (header, nav, slider ...)
+
+
+// NAV
+
+nav {
+  background-color: darkslategray;
+  h3 {
+    padding: 0.5rem;
+  }
+  ul {
+    list-style-type: none;
+    li {
+      display: inline;
+      color: #4b2c20;
+      a {
+        text-decoration: none;
+        //Sélecteur parent d'unification
+        &:hover {
+          color: yellow;
+        }
+      }
+    }
+  }
+}
+
+// Imbrication des propriétés CSS
+.title {
+  font: {
+    size: 2.2rem;
+    family: Arial, sans-serif;
+    weight: bold;
+    style: italic;
+  }
+}
+
+// Imbrication d'une directive media
+.about-container {
+  width: 90%;
+  padding: 1rem;
+  @media screen and (min-width: 768px){
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 962px){
+    justify-content: end;
+  }
+}
