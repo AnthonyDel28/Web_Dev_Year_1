@@ -169,13 +169,44 @@ function getRandPassengersByDistance(int $distance): int
     return mt_rand(50, $passengers_max);
 }
 
-function getAirports() :object {
-    global $connect;
-
-    $request = $connect->prepare('SELECT l.name, c.name as country, (SELECT MAX(r.length) as length FROM location_runway lr, runway r WHERE lr.runwayid = r.id AND lr.locationid = l.id) as runway, l.longitude, l.latitude
-    FROM location l, country c WHERE l.countryid = c.id ORDER BY name');
-    $request->execute();
-    $request->setFetchMode(PDO::FETCH_OBJ);
-    return $request;
-    
+/**
+ * @param $mode
+ * @param $modes_array
+ * @return string
+ */
+function getMode ($mode, $modes_array) :string {
+    if(!in_array($mode, $modes_array)){
+        $mode = 'eco';
+    } return $mode;
 }
+
+/**
+ * @param $start
+ * @param $destination
+ * @return void
+ */
+function distinctDestinations ($start, $destination) :void {
+    if($start == $destination){
+        $_SESSION['alert'] = 'Votre lieu de départ ne peut pas être le même que votre lieu de destination!';
+        $_SESSION['alert_level'] = 'danger';
+        header('Location: index.php?page=view/client/travel');
+        die;
+    }
+}
+
+/**
+ * @return void
+ */
+function getCountry () :string {
+    global $connect;
+    $str = '';
+    $country = $connect->prepare('SELECT * FROM country ORDER BY name');
+    $country->execute();
+    $country->setFetchMode(PDO::FETCH_OBJ);
+    foreach($country as $row){
+        $str .= '<option value=' . $row->name . '>' . $row->name . '</option>';
+    }
+    return $str;
+}
+
+

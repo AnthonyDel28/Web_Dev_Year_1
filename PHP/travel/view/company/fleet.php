@@ -13,11 +13,25 @@
  *
  * Le coût d'un vol peut être obtenu via la fonction getFlightCost()
  */
+
+$connect = connect();
+$select = $connect->prepare('SELECT * FROM company WHERE managerid = ?');
+$select->execute([$_SESSION['userid']]);
+$select->setFetchMode(PDO::FETCH_OBJ);
+
+
+
+
 ?>
 <h2>Commande d'avion</h2>
-<form action="">
+<form action="index.php?page=app/company/fleet" method="POST">
     <label for="company">Compagnie</label>
     <select name="company" id="company" class="form-control" required>
+        <?php
+        foreach ($select as $row) {
+            print '<option value='. $row->name . '>' . $row->name . '</option>';
+        }
+        ?>
     </select>
     <div class="table-responsive">
         <table class="table">
@@ -39,20 +53,29 @@
             </tr>
             </thead>
             <tbody>
+            <?php
+                $avions = $connect->prepare('SELECT * FROM airplane');
+                $avions->execute();
+                $avions->setFetchMode(PDO::FETCH_OBJ);
+            ?>
             <tr>
-                <td><input type="radio" name="plane" value=""></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <?php
+                    foreach($avions as $row){
+                        print '<tr><td><input type="radio" name="plane" value=""></td>
+                                <td>'. $row->name . '</td>
+                                <td>'. $row->price . '€</td>
+                                <td>'. $row->passengers . '</td>
+                                <td>'. $row->range . '</td>
+                                <td>'. $row->cruise . 'Km/h</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td></tr>';
+                    }
+                ?>
             </tr>
             </tbody>
         </table>

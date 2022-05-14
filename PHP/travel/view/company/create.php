@@ -13,13 +13,16 @@
  * Le traitement du formulaire se fera dans le fichier app/company/create.php
  */
 
+
+
 ?>
-<form action="">
+<form action="index.php?page=app/company/create" method="POST" enctype="multipart/form-data">
     <label for="name">Nom</label>
     <input type="text" id="name" name="name" class="form-control" required>
     <label for="country">Pays</label>
     <select name="country" id="country" class="form-control">
+        <?php print getCountry(); ?>
     </select>
-    <input type="file" name="logo">
+    <input type="file" name="logo" ">
     <input type="submit" value="Créer">
 </form>

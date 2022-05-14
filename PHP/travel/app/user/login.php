@@ -19,6 +19,10 @@ if (!empty($_POST['username']) && !empty($_POST['password'])) {
         $update->execute([$user->id]);
         $_SESSION['userid'] = $user->id;
         header('Location: index.php');
+        $_SESSION['alert'] = 'Bienvenue ! Vous êtes désormais connecté avec le compte: ' . $user->username;
+        $_SESSION['alert_level'] = 'check';
+        header('Location: index.php?page=view/client/profile');
+        die;
         die;
     } else {
         echo "Paramètres invalides!";
