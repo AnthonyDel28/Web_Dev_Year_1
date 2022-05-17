@@ -209,7 +209,9 @@ function getCountry () :string {
     return $str;
 }
 
-
+/**
+ * @return void
+ */
 function checkAccess() :void {
     if(empty($_SESSION['userid'])){
         $_SESSION['alert'] = 'Vous devez être connecté pour accéder à ce contenu!';
@@ -219,6 +221,10 @@ function checkAccess() :void {
     }
 }
 
+/**
+ * @param $role
+ * @return void
+ */
 function checkRole ($role) :void {
     if(!empty($_SESSION['userid'])){
         global $connect;
