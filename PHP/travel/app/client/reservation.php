@@ -9,3 +9,5 @@
  *
  * Cette page affichera un message de confirmation ou d'erreur en cas d'échec.
  */
+
+checkAccess();

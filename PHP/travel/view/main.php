@@ -2,7 +2,7 @@
     <?php
 
     if (!empty($_SESSION['alert']) && !empty($_SESSION['alert_level'])) {
-        echo '<div style="color: green;" class="alert alert—' . $_SESSION['alert_level'] . '">' . $_SESSION['alert'] . '</div>';
+        echo '<div class="btn btn-outline-' . $_SESSION['alert_level'] . '">' . $_SESSION['alert'] . '</div>';
         unset($_SESSION['alert']);
         unset($_SESSION['alert_level']);
     }

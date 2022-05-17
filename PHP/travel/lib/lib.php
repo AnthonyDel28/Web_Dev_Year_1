@@ -210,3 +210,27 @@ function getCountry () :string {
 }
 
 
+function checkAccess() :void {
+    if(empty($_SESSION['userid'])){
+        $_SESSION['alert'] = 'Vous devez être connecté pour accéder à ce contenu!';
+        $_SESSION['alert_level'] = 'danger';
+        header ('Location: index.php?page=view/main');
+        die;
+    }
+}
+
+function checkRole ($role) :void {
+    if(!empty($_SESSION['userid'])){
+        global $connect;
+
+        $select = $connect->prepare('SELECT user.id, user_role.id, user_role.userid, user_role.roleid, role.id FROM user_role JOIN role ON user_role.roleid = role.id JOIN user ON user_role.userid = user.id WHERE user_role.userid = ? AND role.name = ?');
+        $select->execute([$_SESSION['userid'], $role]);
+        if(!$select->rowCount()){
+            $_SESSION['alert'] = 'Vous ne disposez pas des droits nécéssaires pour accéder à ce contenu!';
+            $_SESSION['alert_level'] = 'danger';
+            header ('Location: index.php?page=view/main');
+            die;
+        }
+    }
+}
+

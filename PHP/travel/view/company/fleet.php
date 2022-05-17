@@ -14,6 +14,7 @@
  * Le coût d'un vol peut être obtenu via la fonction getFlightCost()
  */
 
+checkRole('manager');
 $connect = connect();
 $select = $connect->prepare('SELECT * FROM company WHERE managerid = ?');
 $select->execute([$_SESSION['userid']]);

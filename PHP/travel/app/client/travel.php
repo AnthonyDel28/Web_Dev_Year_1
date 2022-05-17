@@ -92,15 +92,19 @@ foreach ($flights as $flight) {
                         <td>' . formatFlightDuration($flight['duration']) . '</td>
                         <td>' . $flight['stopover'] . '</td>
                         <td>' . $flight['cons'] . 'L</td>
-                        <td></td>
+                        <td><form action="/action_page.php" method="POST">
+                              <input type="text" id="fname" name="fname" hidden>
+                              <input type="text" id="lname" name="lname" hidden>
+                              <button type="submit" class="btn btn-info">Réserver ce vol</button>
+                            </form></td>
                         </tr>';
 }
 
 ?>
 <h2>Vol</h2>
-De <?=$start->name?> à <?=$destination->name?>
-<br>Distance <?=$distance?> km
-<br>Mode : <?=$_GET['mode']?>
+De <b><?=$start->name?></b> à <b><?=$destination->name?></b>
+<br>Distance <b><?=$distance?> km</b>
+<br>Mode : <b><?=$_GET['mode']?></b>
 <table class="table">
     <thead>
     <tr>
