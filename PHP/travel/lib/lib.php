@@ -269,3 +269,16 @@ function checkCash ($company, $plane) :bool {
         return FALSE;
     }
 }
+
+function getLogo ($id) :void {
+    $extension = '';
+   if(glob('images/company/logo/' . $id .'.png')){
+       $extension = 'png';
+   } else if (glob('images/company/logo/' . $id .'.jpg')){
+       $extension = 'jpg';
+   }
+    if(file_exists('images/company/logo/' . $id . '.' . $extension)){
+        print '<img src="images/company/logo/' . $id . '.' . $extension.'" alt="">';
+    }
+}
+
