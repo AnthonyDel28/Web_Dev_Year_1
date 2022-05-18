@@ -240,3 +240,32 @@ function checkRole ($role) :void {
     }
 }
 
+function checkCompanyManager ($manager, $company) :void {
+    global $connect;
+
+    $request = $connect->prepare('SELECT * FROM company WHERE id = ? AND managerid = ?');
+    $request->execute([$company, $manager ]);
+    if(!$request->rowCount()){
+        $_SESSION['alert'] = 'Vous n\'êtes pas le manager de cette compagnie!';
+        $_SESSION['alert_level'] = 'danger';
+        header ('Location: index.php?page=view/main');
+    }
+}
+
+function checkCash ($company, $plane) :bool {
+    global $connect;
+
+    $companyCash = $connect->prepare('SELECT * FROM company WHERE id = ?');
+    $companyCash->execute([$company]);
+    $cash = $companyCash->fetchObject();
+
+    $planePrice = $connect->prepare('SELECT * FROM airplane WHERE id = ?');
+    $planePrice->execute([$plane]);
+    $price = $planePrice->fetchObject();
+
+    if($cash->cash >= $price->price) {
+        return TRUE;
+    } else {
+        return FALSE;
+    }
+}

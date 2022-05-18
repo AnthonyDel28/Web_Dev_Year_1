@@ -16,23 +16,41 @@
 
 checkRole('manager');
 $connect = connect();
-$select = $connect->prepare('SELECT * FROM company WHERE managerid = ?');
-$select->execute([$_SESSION['userid']]);
-$select->setFetchMode(PDO::FETCH_OBJ);
+$companies = '';
 
+$list = $connect->prepare("SELECT * FROM company WHERE managerid = ? ORDER BY name");
+$list->execute([$_SESSION['userid']]);
+$list->setFetchMode(PDO::FETCH_OBJ);
+foreach ($list as $item) {
+    $companies .= '<option value="' . $item->id . '">' . $item->name . '</option>';
+}
 
-
+$table = '';
+$planes = $connect->query("SELECT * FROM airplane ORDER BY price", PDO::FETCH_OBJ);
+foreach ($planes as $plane) {
+    $table .= '<tr>';
+    $table .= '<td><input type="radio" name="plane" value="' . $plane->id . '"></td>';
+    $table .= '    <td>' . $plane->name . '</td>
+                        <td>' . number_format($plane->price) . '€</td>
+                        <td>' . $plane->passengers . '</td>
+                        <td>' . $plane->range . 'km</td>
+                        <td>' . $plane->cruise . 'km/h</td>
+                        <td>' . $plane->takeoff . 'm</td>
+                        <td>' . round((getFlightCost($plane, $plane->range, $plane->passengers) / $plane->passengers / $plane->range), 2) . '€</td>
+                        <td>' . round((getFlightCost($plane, 100, 50) / 50 / 100), 2) . '€</td>
+                        <td>' . round((getFlightCost($plane, 500, 50) / 50 / 500), 2) . '€</td>
+                        <td>' . round((getFlightCost($plane, 1000, 100) / 100 / 1000), 2) . '€</td>
+                        <td>' . round((getFlightCost($plane, 5000, 100) / 100 / 5000), 2) . '€</td>
+                        <td>' . round((getFlightCost($plane, 10000, 250) / 250 / 10000), 2) . '€</td>
+                    </tr>';
+}
 
 ?>
 <h2>Commande d'avion</h2>
 <form action="index.php?page=app/company/fleet" method="POST">
     <label for="company">Compagnie</label>
     <select name="company" id="company" class="form-control" required>
-        <?php
-        foreach ($select as $row) {
-            print '<option value='. $row->name . '>' . $row->name . '</option>';
-        }
-        ?>
+        <?=$companies?>
     </select>
     <div class="table-responsive">
         <table class="table">
@@ -54,30 +72,7 @@ $select->setFetchMode(PDO::FETCH_OBJ);
             </tr>
             </thead>
             <tbody>
-            <?php
-                $avions = $connect->prepare('SELECT * FROM airplane');
-                $avions->execute();
-                $avions->setFetchMode(PDO::FETCH_OBJ);
-            ?>
-            <tr>
-                <?php
-                    foreach($avions as $row){
-                        print '<tr><td><input type="radio" name="plane" value=""></td>
-                                <td>'. $row->name . '</td>
-                                <td>'. $row->price . '€</td>
-                                <td>'. $row->passengers . '</td>
-                                <td>'. $row->range . '</td>
-                                <td>'. $row->cruise . 'Km/h</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td></tr>';
-                    }
-                ?>
-            </tr>
+            <?=$table?>
             </tbody>
         </table>
     </div>
