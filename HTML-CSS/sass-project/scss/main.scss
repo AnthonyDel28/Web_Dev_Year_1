@@ -1,0 +1,206 @@
+@import '../node_modules/minireset.css/minireset';
+@import 'partials/variables';
+@import 'partials/tools';
+
+// GENERAL STYLES
+body {
+  color: $primary-color;
+  font-family: $primary-typo;
+}
+
+h2 {
+  padding: 3rem 0 1rem 0;
+  font-size: 2.6rem;
+  font-family: $secondary-typo;
+  text-align: center;
+}
+
+h2::after {
+  background-color: $theme-color;
+  content: ' ';
+  display: block;
+  margin: 5px auto 0;
+  height: 4px;
+  width: 80px;
+}
+
+h3 {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+}
+
+p {
+  padding: 0.8rem 0;
+}
+// HEADER
+header {
+  height: 100vh;
+  background: $bg-image no-repeat center/cover;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Modifie la forme de l'élément */
+}
+
+// NAVBAR
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  padding: 0 1rem;
+  background-color: $bg-color;
+  color: $white;
+  p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    li {
+      padding: 0 0.8rem;
+    }
+    a {
+      font-size: 0.7rem;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+// SLIDER
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  div {
+    width: 90%;
+    padding: 3rem 0.6rem;
+    background-color: $bg-color;
+    color: $white;
+    text-align: center;
+    border-radius: $radius;
+    @include style-border(transparentize($border-color, 0.7));
+    h1 {
+      font-size: 3rem;
+      padding-bottom: 1rem;
+      font-family: $secondary-typo;
+    }
+    p {
+      padding-bottom: 2.4rem;
+      font-size: 0.9rem;
+    }
+    a {
+      padding: 0.8rem 1rem;
+      font-size: 0.8rem;
+      text-decoration: none;
+      color: $white;
+      @include style-border($border-color);
+      &:hover {
+        background-color: $bg-color;
+      }
+    }
+  }
+  @media #{$desktop} {
+    div {
+      width: 60%;
+    }
+  }
+}
+
+// SECTIONS
+section {
+  margin: 0 5%;
+}
+
+// ABOUT
+.about {
+  img {
+    border-radius: $radius;
+  }
+  a {
+    @extend .btn;
+  }
+  .specificities {
+    display: flex;
+    align-items: center;
+    margin: 1.6rem 0 2.8rem 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    div {
+      width: 30%;
+      font-size: 0.8rem;
+      @media #{$tablet} {
+        font-size: 1rem;
+      }
+    }
+    span {
+      color: $theme-color;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+  @media #{$desktop} {
+    .about-container {
+      display: flex;
+      > div {
+        width: 50%;
+      }
+      img {
+        width: 90%;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// SERVICES
+.services {
+  margin: 4rem 0 0 0;
+  padding: 0 1.6rem;
+  background-color: $back-color;
+  .services-container {
+    text-align: center;
+    div {
+      margin: 2%;
+      padding: 0.6rem 0.4rem 2rem 0.4rem;
+      @include style-border($gray);
+      border-radius: $radius;
+    }
+    h4 {
+      padding: 1.8rem 0;
+      font-size: 1.4rem;
+    }
+    img {
+      border-radius: $img-round;
+      width: 60%;
+    }
+    p {
+      padding-bottom: 1.8rem;
+    }
+    a {
+      display: inline-block;
+      margin-left: 1rem;
+      @extend .btn;
+    }
+    @media #{$tablet} {
+      display: flex;
+      flex-wrap: wrap;
+      div {
+        width: 45%;
+      }
+    }
+    @media #{$desktop} {
+      div {
+        width: 21%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
