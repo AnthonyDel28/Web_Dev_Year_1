@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* Created 15-06-2022 */
+/* Created 15-06-2022 */
+/* On considère que Mobile est le média par défaut */
+/* Tablette */
+/* Desktop */
+body {
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #3a4147;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+header nav div[target=_main-title] {
+  margin-left: 25px;
+  color: white;
+  font-size: 20px;
+  font-family: "Helvetica";
+}
+header nav div[target=_nav-menu] ul {
+  margin-right: 25px;
+}
+header nav div[target=_nav-menu] ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+header nav div[target=_nav-menu] ul a {
+  text-decoration: none;
+  color: white;
+  font-family: "Helvetica";
+}
+header div[target=_header-image] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-image: url("../img/s02.jpeg");
+  background-position: left bottom;
+}
+header div[target=_header-image] div[target=_header-title] {
+  width: auto;
+  background-color: rgba(75, 74, 74, 0.63);
+  padding: 10px;
+}
+header div[target=_header-image] div[target=_header-title] h1 {
+  color: white;
+  font-family: "Helvetica";
+  font-weight: lighter;
+  margin: 10px;
+}
+header div[target=_header-image] div[target=_header-title] span {
+  color: #ff6200;
+}
+
+#about-us div[target=_section-title] p::before {
+  content: "[";
+}
+#about-us div[target=_section-title] p {
+  color: #252525;
+  font-size: 25px;
+  font-family: "Helvetica";
+}
+#about-us div[target=_section-title] p::after {
+  content: "]";
+}
+
+/*# sourceMappingURL=main.css.map */
